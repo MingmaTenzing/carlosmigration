@@ -5,7 +5,7 @@ import Carlos from "../../assests/Carlos Charlie Castro.jpg"
 type Props = {};
 function AboutUs({}: Props) {
   return (
-    <div className=" z-20 md:flex md:justify-center md:items-center  mt-10">
+    <div className=" z-20 md:flex md:justify-center md:items-center  mt-20">
       <div className=" md:w-1/2 space-y-4 md:space-y-6 p-4">
         <div className=" space-y-3">
           <h3 className=" md:text-base uppercase text-orange text-sm   font-semibold">

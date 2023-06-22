@@ -50,7 +50,7 @@ function Hero({}: Props) {
             <button className=" bg-[#ff5857] text-white p-3 mt-4 rounded-lg hover:bg-[#444] text-sm px-4 transition-all ease-linear duration-150">Contact Now</button>
 </div>
 
-            <span className=" w-full h-full absolute top-0 left-0 opacity-70 z-10 bg-[#201c2c]"></span>
+            <span className=" w-full h-full absolute top-0 left-0 opacity-90 z-10 bg-[#201c2c]"></span>
           </div>
         ))}
       </Fade>
