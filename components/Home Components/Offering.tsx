@@ -6,7 +6,7 @@ import touristVisa from "../../assests/tourist.jpg"
 type Props = {};
 function Offering({}: Props) {
   return (
-    <div className="  p-4 mt-20">
+    <div className=" lg:pt-40   py-20 bg-gray-100  p-4 lg:mt-32 mt-20">
       <div className=" flex flex-col  items-center text-center">
         <h3 className=" text-orange uppercase font-semibold text-sm">
           {" "}
@@ -20,7 +20,7 @@ function Offering({}: Props) {
       <div className=" mt-10 flex flex-col md:flex-row md:flex-wrap md:justify-center items-center">
 
         {/** OFFERING  */}
-        <div className="  hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
+        <div className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
           <div className=" relative w-full h-[45%]">
             <Image
               src={familyvisa}
@@ -48,7 +48,7 @@ function Offering({}: Props) {
           {/** OFFERING  */}
 
         {/** OFFERING  */}
-        <div className="  hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
+        <div className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
           <div className=" relative w-full h-[45%]">
             <Image
               src={workVisa}
@@ -76,7 +76,7 @@ function Offering({}: Props) {
           {/** OFFERING  */}
 
         {/** OFFERING  */}
-        <div className="  hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
+        <div className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
           <div className=" relative w-full h-[45%]">
             <Image
               src={studentVisa}
@@ -103,7 +103,7 @@ function Offering({}: Props) {
         </div>
           {/** OFFERING  */}
         {/** OFFERING  */}
-        <div className="  hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
+        <div className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
           <div className=" relative w-full h-[45%]">
             <Image
               src={touristVisa}
