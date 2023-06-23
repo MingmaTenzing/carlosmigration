@@ -9,7 +9,7 @@ type Props = {}
 function Services({}: Props) {
   return (
     <div className='  mt-10 relative p-4 md:justify-center md:flex-row md:flex-wrap flex flex-col items-center'>
-        <div className='group rounded-lg  z-40 overflow-hidden relative p-4 m-4 cursor-pointer w-[340px] lg:w-[380px] h-[300px] border  flex space-x-8'>
+        <div className='group rounded-lg  z-40 overflow-hidden relative p-4 m-4 cursor-pointer w-[340px] lg:w-[350px] h-[300px] border  flex space-x-8'>
             <div>
 
             <Image src={passport} alt='Services Image' width={200} height={200}  loading='eager' className='  z-20 grayscale-0 invert  w-20' />
@@ -29,7 +29,7 @@ function Services({}: Props) {
         
         <span className=' rounded-lg top-0  -left-[32px] w-0 h-0 opacity-0 group-hover:opacity-100  group-hover:w-full group-hover:h-full transition-all ease-linear  duration-300  absolute border  border-[#ff5c54]'></span>
         </div>
-        <div className='group rounded-lg  z-40 overflow-hidden relative p-4 m-4 cursor-pointer w-[340px] lg:w-[380px] h-[300px] border  flex space-x-8'>
+        <div className='group rounded-lg  z-40 overflow-hidden relative p-4 m-4 cursor-pointer w-[340px] lg:w-[350px] h-[300px] border  flex space-x-8'>
             <div>
 
             <Image src={passport} alt='Services Image' width={200} height={200}  loading='eager' className='  z-20 grayscale-0 invert  w-20' />
@@ -49,7 +49,7 @@ function Services({}: Props) {
         
         <span className=' rounded-lg top-0  -left-[32px] w-0 h-0 opacity-0 group-hover:opacity-100  group-hover:w-full group-hover:h-full transition-all ease-linear  duration-300  absolute border  border-[#ff5c54]'></span>
         </div>
-        <div className='group rounded-lg  z-40 overflow-hidden relative p-4 m-4 cursor-pointer w-[340px] lg:w-[380px] h-[300px] border  flex space-x-8'>
+        <div className='group rounded-lg  z-40 overflow-hidden relative p-4 m-4 cursor-pointer w-[340px] lg:w-[350px] h-[300px] border  flex space-x-8'>
             <div>
 
             <Image src={ticket} alt='Services Image' width={200} height={200}  loading='eager' className='  z-20 grayscale-0 invert  w-20' />
@@ -69,7 +69,7 @@ function Services({}: Props) {
         
         <span className=' rounded-lg top-0  -left-[32px] w-0 h-0 opacity-0 group-hover:opacity-100  group-hover:w-full group-hover:h-full transition-all ease-linear  duration-300  absolute border  border-[#ff5c54]'></span>
         </div>
-        <div className='group rounded-lg  z-40 overflow-hidden relative p-4 m-4 cursor-pointer w-[340px] lg:w-[380px] h-[300px] border  flex space-x-8'>
+        <div className='group rounded-lg  z-40 overflow-hidden relative p-4 m-4 cursor-pointer w-[340px] lg:w-[350px] h-[300px] border  flex space-x-8'>
             <div>
 
             <Image src={ticket} alt='Services Image' width={200} height={200}  loading='eager' className='  z-20 grayscale-0 invert  w-20' />
