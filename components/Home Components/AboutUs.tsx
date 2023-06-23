@@ -1,11 +1,11 @@
 import { CheckIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Carlos from "../../assests/Carlos Charlie Castro.jpg"
-
+import dots from "../../assests/dots.png"
 type Props = {};
 function AboutUs({}: Props) {
   return (
-    <div className=" z-20 md:flex md:justify-center md:items-center  mt-20">
+    <div className=" z-20 md:flex md:justify-center md:items-center relative   mt-20">
       <div className=" md:w-1/2 space-y-4 md:space-y-6 p-4">
         <div className=" space-y-3">
           <h3 className=" md:text-base uppercase text-orange text-sm   font-semibold">
@@ -65,6 +65,7 @@ function AboutUs({}: Props) {
       <div className=" flex justify-center ">
         <Image src={Carlos} alt="Carlos Castro" width={312} height={400}  className=" md:min-w-[400px]"/>
       </div>
+      <Image src={dots} width={119} height={247} alt="dots" className=" hidden lg:flex absolute -bottom-[280px] left-40" />
     </div>
   );
 }
