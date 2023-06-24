@@ -7,6 +7,7 @@ import Offering from '../../components/Home Components/Offering'
 import Clients from '../../components/Home Components/Clients'
 import Reviews from '../../components/Home Components/Reviews'
 import BookAppointment from '../../components/Home Components/BookAppointment'
+import RecentBlogs from '../../components/Home Components/RecentBlogs'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Offering />
       <Clients />
       <Reviews />
+      <RecentBlogs />s
      
     </main>
   )
