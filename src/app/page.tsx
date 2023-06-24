@@ -19,7 +19,8 @@ export default function Home() {
       <Offering />
       <Clients />
       <Reviews />
-      <RecentBlogs />s
+      <RecentBlogs />
+      
      
     </main>
   )
