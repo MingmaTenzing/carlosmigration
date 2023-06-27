@@ -7,7 +7,7 @@ import tiktok from "../../assests/tiktok.png";
 type Props = {};
 function Footer({}: Props) {
   return (
-    <div className=" bg-[#1b182f]  p-4 py-10">
+    <div className=" bg-[#1b182f] mt-10  p-4 py-10">
       <div className=" space-y-6 md:space-y-0 md:p-10 md:flex md:justify-around">
         <div>
           <Image

@@ -1,3 +1,4 @@
+import Footer from "../../../components/Home Components/Footer";
 import Nav from "../../../components/Home Components/Nav";
 import "./../globals.css";
 
@@ -9,7 +10,7 @@ const inter = Poppins({
 });
 
 export const metadata = {
-  title: "Carlos Castro Migration",
+  title: "Contact",
   description: " Carlos Castro Migration and Educatoin Services",
 };
 
@@ -26,6 +27,9 @@ export default function RootLayout({
 
         </div>
         {children}
+        <div>
+          <Footer />
+        </div>
       </body>
     </html>
   );
