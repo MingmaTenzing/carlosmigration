@@ -1,4 +1,3 @@
-import Footer from "../../../components/Home Components/Footer";
 import Nav from "../../../components/Home Components/Nav";
 import "./../globals.css";
 
@@ -22,14 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div>
+       <div>
         <Nav />
-
-        </div>
+       </div>
         {children}
-        <div>
-          <Footer />
-        </div>
       </body>
     </html>
   );
