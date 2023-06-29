@@ -22,7 +22,7 @@ function AboutUs({}: Props) {
 
         <div>
           <p className=" md:text-lg">
-            I'm Carlos Castro, an expert migration agent and international
+            I&apos;m Carlos Castro, an expert migration agent and international
             student advisor. I ensure a smooth journey for your migration and
             education goals abroad.
           </p>

@@ -1,5 +1,6 @@
-import Nav from "../../components/Home Components/Nav";
-import "./globals.css";
+import Nav from "../../../components/Home Components/Nav";
+import "./../globals.css";
+
 import { Poppins } from "next/font/google";
 
 const inter = Poppins({
@@ -8,7 +9,7 @@ const inter = Poppins({
 });
 
 export const metadata = {
-  title: "Carlos Castro Migration",
+  title: "Services",
   description: " Carlos Castro Migration and Educatoin Services",
 };
 
@@ -19,8 +20,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true} className={inter.className}>
+      <body className={inter.className}>
+        <div>
+        <Nav />
+
+        </div>
         {children}
+      
       </body>
     </html>
   );

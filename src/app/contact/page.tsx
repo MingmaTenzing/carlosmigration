@@ -18,7 +18,7 @@ function Contact({}: Props) {
             Contact
           </h1>
           <h2 className=" text-2xl text-white font-semibold md:text-xl ">
-            It's your turn to change your{" "}
+            It&apos;s your turn to change your{" "}
             <span className=" text-orange">future.</span>{" "}
           </h2>
         </div>
@@ -33,7 +33,6 @@ function Contact({}: Props) {
         <span className=" bg-[#201c2c] h-full w-full top-0  left-0 bg-opacity-90 absolute "></span>
       </div>
 
-      
       <div className=" p-4 mt-4">
         <div className=" md:text-center space-y-3">
           <p className=" text-sm font-semi uppercase text-orange">

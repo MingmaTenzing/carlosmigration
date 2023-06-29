@@ -22,7 +22,7 @@ function Reviews() {
       <div className=" z-10 flex flex-col items-center space-y-2">
         <h3 className=" uppercase text-sm text-orange">Reviews</h3>
         <h2 className=" font-bold text-2xl md:text-3xl lg:text-4xl">
-          What They're Saying
+          What They&apos;re Saying
         </h2>
       </div>
 
