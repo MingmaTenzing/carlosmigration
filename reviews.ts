@@ -4,8 +4,8 @@ const reviews = [
   {
     id: 1,
     reviewText:
-      "Lorem ipsum is simply free text dolor sit amet, consecte notted adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore aliqua.",
-    user: "Kevin Martin",
+    "Carlos has been an incredible student advisor throughout my journey. His guidance and expertise have helped me make informed decisions about my education and career path. He genuinely cares about his clients and goes above and beyond to ensure their success. Thanks to Carlos, I have successfully transitioned into a fulfilling career and I highly recommend his services to anyone seeking guidance and support.",
+    user: "Sarah J.",
     position: "student",
     photoURL: userPhoto,
   },

@@ -2,8 +2,8 @@
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "components/**/*.{js,ts,jsx,tsx,mdx}",
-    "utilities/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./utilities/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -21,3 +21,4 @@ module.exports = {
   },
   plugins: [require("tailwind-scrollbar-hide")],
 };
+
