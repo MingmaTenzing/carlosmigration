@@ -102,33 +102,8 @@ function Offering({}: Props) {
        
         </div>
           {/** OFFERING  */}
-        {/** OFFERING  */}
-        <div className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
-          <div className=" relative w-full h-[45%]">
-            <Image
-              src={touristVisa}
-              width={340}
-              height={250}
-              alt="Services Image"
-              className=" h-full w-full  object-cover"
-            />
-            <span className=" bg-[#201c2c] h-full w-full absolute  top-0 left-0 opacity-0 group-hover:opacity-60 transition-all ease-linear duration-300 "></span>
-          </div>
-          <div className=" space-y-4 p-4">
-            <h3 className=" font-bold text-2xl ">Tourist Visa</h3>
-            <p>
-              Sed quia magni dolores eos qui ratione voluptatem sequi nesciunt
-              eque porro.
-            </p>
-            <button className="  p-3 bg-orange text-sm rounded-lg text-white hover:bg-[#444] transition-all ease-linear dura">Contact Now</button>
-
-          </div>
-
-          <span className="  -bottom-10 -right-10 absolute group-hover:w-[100px] group-hover:h-[100px] w-0 h-0 transition-all ease-linear  duration-300 rounded-full bg-orange z-10"></span>
-          <span className="  -bottom-10 -right-10 absolute w-[100px] h-[100px] rounded-full bg-gray-400"></span>
-       
-        </div>
-          {/** OFFERING  */}
+      
+        
 
 
         
