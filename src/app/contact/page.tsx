@@ -12,7 +12,7 @@ type Props = {};
 function Contact({}: Props) {
   return (
     <div>
-      <div className="  overflow-hidden w-full h-[280px]  border relative">
+      <div className="  overflow-hidden w-full h-[280px]   relative">
         <div className=" space-y-2 lg:space-y-4 text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
           <h1 className=" font-bold text-3xl md:text-4xl lg:text-5xl text-center text-orange z-30">
             Contact
