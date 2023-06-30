@@ -1,3 +1,4 @@
+
 import { StarIcon } from "@heroicons/react/24/solid";
 import userPhoto from "../assests/user.jpg";
 import Image from "next/image";

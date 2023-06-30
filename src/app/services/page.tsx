@@ -38,7 +38,7 @@ function page({}: Props) {
       <div className="  lg:w-[2/3] m-auto p-4 mt-10  flex justify-center items-center  ">
         <div className=" md:w-1/2 space-y-4">
           <h2 className=" font-bold text-2xl md:text-3xl lg:text-4xl">
-            Providing You The Best Services
+            Providing You The <span  className=" text-orange">Best Services</span>
           </h2>
           <p className=" lg:text-lg">
             Welcome to the world of migration and education in Australia, where
