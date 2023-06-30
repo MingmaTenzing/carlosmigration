@@ -1,5 +1,6 @@
 import Image from "next/image";
 import bg from "../../../assests/Services Bg.jpg";
+import australia from "../../../assests/Australia.jpg";
 import carlos from "../../../assests/Carlos Charlie Castro Photo.png";
 import {
   AcademicCapIcon,
@@ -12,7 +13,6 @@ import {
   HomeIcon,
   PaperAirplaneIcon,
 } from "@heroicons/react/24/outline";
-import passport from "../../../assests/passport.png";
 
 type Props = {};
 function page({}: Props) {
@@ -53,7 +53,6 @@ function page({}: Props) {
             with expertise and care. With our comprehensive range of services,
             we're here to make your journey smooth, seamless, and successful.
           </p>
-       
         </div>
         <div className=" hidden md:flex">
           <Image
@@ -247,6 +246,29 @@ function page({}: Props) {
         </div>
 
         {/** SERVICES */}
+      </div>
+
+      <div className=" mt-10 flex  flex-col items-center space-y-4 md:space-y-0 md:flex-row md:space-x-4 md:justify-center">
+        <div>
+          <Image
+            src={australia}
+            alt=" image of australia"
+            width={320}
+            height={320}
+            className=" lg:w-[400px]  rounded-lg"
+          />
+        </div>
+        <div className=" w-[300px]  lg:w-[400px] space-y-3">
+          <h2 className=" font-bold text-2xl md:text-3xl lg:text-4xl">Helping You Achieve Your Dreams</h2>
+          <p className=" lg:text-lg ">
+            I believe in turning dreams into reality. With our expertise and
+            personalized approach, I will guide you towards a brighter future in
+            Australia. Don't let your dreams of migration and education in
+            Australia remain just dreams. Take action now and contact Carlos to
+            start your incredible journey today. Together, we'll make your
+            Australian dreams come true.
+          </p>
+        </div>
       </div>
     </div>
   );
