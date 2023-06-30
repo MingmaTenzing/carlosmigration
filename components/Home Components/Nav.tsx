@@ -27,10 +27,17 @@ function Nav({}: Props) {
           <Bars3Icon className=" lg:hidden w-6" />
           <div className=" hidden lg:flex space-x-10">
             <Link
-              href="/"
+              href="/visas"
               className=" text-gray-500 hover:text-black transition-all ease-linear duration-150"
             >
-              About
+              Visas
+            </Link>
+            <Link
+              href="/services"
+              className=" text-gray-500 hover:text-black transition-all ease-linear duration-150"
+            >
+              Services
+              
             </Link>
             <Link
               href="/contact"
