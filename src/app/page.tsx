@@ -10,8 +10,8 @@ import Nav from "../../components/Home Components/Nav";
 
 export default function Home() {
   return (
-    <main>
-      <Nav />
+    <div>
+   
       <Hero />
       <HeroServices />
       <AboutUs />
@@ -19,6 +19,6 @@ export default function Home() {
       <Clients />
       <Reviews />
       <RecentBlogs />
-    </main>
+    </div>
   );
 }
