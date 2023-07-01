@@ -1,5 +1,5 @@
-import Nav from "../../../components/Home Components/Nav";
-import "./../globals.css";
+import Nav from "../../../../components/Home Components/Nav";
+import "../../../app/globals.css";
 
 import { Poppins } from "next/font/google";
 
@@ -9,7 +9,7 @@ const inter = Poppins({
 });
 
 export const metadata = {
-  title: "Visas",
+  title: "Family Visa",
   description: " Carlos Castro Migration and Education Services",
 };
 
