@@ -9,7 +9,7 @@ type Props = {};
 function Nav({}: Props) {
   const router = useRouter();
   return (
-    <main className="shadow-md  ">
+    <div className="shadow-md  ">
       <div className="  m-auto  lg:w-[1200px] lg:p-10 md:p-8  p-4 flex items-center justify-between">
         <div className=" flex ">
           
@@ -54,7 +54,7 @@ function Nav({}: Props) {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
 export default Nav;

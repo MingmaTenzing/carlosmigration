@@ -9,8 +9,8 @@ const inter = Poppins({
 });
 
 export const metadata = {
-  title: "Services",
-  description: " Carlos Castro Migration and Educatoin Services",
+  title: "Visas",
+  description: " Carlos Castro Migration and Education Services",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <main>
           <Nav />
-          {children}
+          <div>{children}</div>
         </main>
       </body>
     </html>
