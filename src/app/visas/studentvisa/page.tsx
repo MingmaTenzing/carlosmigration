@@ -9,6 +9,7 @@ import students from "../../../../assests/Students Background Image.jpg";
 import bg from "../../../../assests/Visa Background.jpg";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import VisaNavigation from "../../../../utilities/VisaNavigation";
+import HeroBackground from "../../../../utilities/HeroBackground";
 type Props = {};
 function StudentVisa({}: Props) {
   const path = usePathname();
@@ -21,22 +22,7 @@ function StudentVisa({}: Props) {
   return (
     <>
       <div>
-        <div className="  overflow-hidden min-w-full h-[320px]   relative">
-          <div className=" space-y-2 lg:space-y-4 text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-            <h2 className=" font-bold text-3xl md:text-4xl lg:text-5xl text-center text-white w-full z-30">
-              Student Visa
-            </h2>
-          </div>
-
-          <Image
-            src={bg}
-            alt="Contact Background Image"
-            width={640}
-            height={247}
-            className="  w-full h-full object-cover"
-          />
-          <span className=" bg-[#201c2c] h-full w-full top-0  left-0 bg-opacity-90 absolute "></span>
-        </div>
+       <HeroBackground bg={bg} title="Student Visa" subTitle="Get the best services across all visa categories" />
       </div>
 
       {/** BODY */}
