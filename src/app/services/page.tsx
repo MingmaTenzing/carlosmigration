@@ -37,7 +37,7 @@ function page({}: Props) {
             Are you ready to embark on a life-changing adventure? Let us be your
             trusted guide, helping you navigate the complexities of migration
             with expertise and care. With our comprehensive range of services,
-            we're here to make your journey smooth, seamless, and successful.
+            we&apos;re here to make your journey smooth, seamless, and successful.
           </p>
         </div>
         <div className=" hidden md:flex">
@@ -67,7 +67,7 @@ function page({}: Props) {
             <p>
               {" "}
               Obtaining the right visa is the key that unlocks the door to
-              Australia.We'll be your unwavering support, ensuring a golden
+              Australia.We&apos;ll be your unwavering support, ensuring a golden
               ticket to your Australian dream.
             </p>
           </div>
@@ -89,7 +89,7 @@ function page({}: Props) {
             </h2>
             <p>
               {" "}
-              We'll guide you through the maze of options, empowering you to
+              We&apos;ll guide you through the maze of options, empowering you to
               make informed decisions about your educational journey.
             </p>
           </div>
@@ -154,7 +154,7 @@ function page({}: Props) {
             </h2>
             <p>
               {" "}
-              We'll guide you in selecting the right health insurance plan that
+              We&apos;ll guide you in selecting the right health insurance plan that
               meets your needs and complies with Australian regulations.{" "}
             </p>
           </div>
@@ -176,7 +176,7 @@ function page({}: Props) {
             </h2>
             <p>
               Moving to a new country can be overwhelming, but with Carlos
-              Migration and Education, you'll never feel alone.{" "}
+              Migration and Education, you&apos;ll never feel alone.{" "}
             </p>
           </div>
 
@@ -197,8 +197,8 @@ function page({}: Props) {
             </h2>
             <p>
               {" "}
-              Whether it's a shared apartment, a student dormitory, or a cozy
-              family home, we'll help you settle into your new Australian life
+              Whether it&apos;s a shared apartment, a student dormitory, or a cozy
+              family home, we&apos;ll help you settle into your new Australian life
               with ease.
             </p>
           </div>
@@ -249,9 +249,9 @@ function page({}: Props) {
           <p className=" lg:text-lg ">
             I believe in turning dreams into reality. With our expertise and
             personalized approach, I will guide you towards a brighter future in
-            Australia. Don't let your dreams of migration and education in
+            Australia. Don&apos;t let your dreams of migration and education in
             Australia remain just dreams. Take action now and contact Carlos to
-            start your incredible journey today. Together, we'll make your
+            start your incredible journey today. Together, we&apos;ll make your
             Australian dreams come true.
           </p>
         </div>

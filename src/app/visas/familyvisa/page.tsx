@@ -35,11 +35,11 @@ function familyVisa({}: Props) {
             Student Visas
           </h1>
           <p>
-            Are you dreaming of studying in Australia? It's time to turn that
+            Are you dreaming of studying in Australia? It&apos;s time to turn that
             dream into reality! With its top-notch universities, diverse
             culture, and stunning landscapes, Australia offers an incredible
             educational experience. But before you embark on this exciting
-            journey, you need to secure a student visa. Don't worry, we're here
+            journey, you need to secure a student visa. Don&apos;t worry, we&apos;re here
             to guide you through the process and introduce you to Carlos, your
             golden ticket to success through Golden Ticket Migration!
           </p>
@@ -49,7 +49,7 @@ function familyVisa({}: Props) {
             A student visa is your key to unlocking the door to world-class
             education in Australia. It allows you to pursue your chosen course
             while immersing yourself in a vibrant and multicultural environment.
-            So let's dive into the details and discover how you can make thiss
+            So let&apos;s dive into the details and discover how you can make thiss
             happen!
           </p>
           <h2 className=" font-semibold text-xl md:text-2xl ">Eligibility</h2>
@@ -69,7 +69,7 @@ function familyVisa({}: Props) {
             abide by. These include maintaining full-time enrollment in your
             chosen course, making satisfactory academic progress, and
             maintaining adequate health insurance coverage throughout your stay
-            in Australia. It's important to adhere to these conditions to ensure
+            in Australia. It&apos;s important to adhere to these conditions to ensure
             a smooth and successful academic journey.
           </p>
           <h2 className=" font-semibold text-xl md:text-2xl ">Conditions</h2>
@@ -118,7 +118,7 @@ function familyVisa({}: Props) {
 
             <li>
               3. Complete the online application: Visit the official Australian
-              Government's Department of Home Affairs website and fill out the
+              Government&apos;s Department of Home Affairs website and fill out the
               student visa application form accurately. Double-check all the
               information before submitting.
             </li>
@@ -127,7 +127,7 @@ function familyVisa({}: Props) {
               a fee, which can be paid online through various payment methods.
             </li>
             <li>
-              5. Submit your application: Once you've completed the form and
+              5. Submit your application: Once you&apos;ve completed the form and
               paid the fee, submit your application online. Keep a copy of the
               receipt and any other relevant documents for your records.
             </li>
@@ -150,7 +150,7 @@ function familyVisa({}: Props) {
           <h2 className=" font-semibold text-xl md:text-2xl "> Conclusion</h2>
 
           <p>
-            Don't let your dreams of studying in Australia remain just dreams.
+            Don&apos;t let your dreams of studying in Australia remain just dreams.
             Take action today and embark on an exciting adventure of learning,
             growth, and cultural exploration. Trust Carlos and Golden Ticket
             Migration to guide you through the student visa application process,

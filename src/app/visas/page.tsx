@@ -13,7 +13,7 @@ import HeroBackground from "../../../utilities/HeroBackground"
 
 
 type Props = {}
-function page({}: Props) {
+function Visas({}: Props) {
     const router = useRouter();
   return (
     <div>
@@ -210,4 +210,4 @@ function page({}: Props) {
     </div>
   )
 }
-export default page
+export default Visas
