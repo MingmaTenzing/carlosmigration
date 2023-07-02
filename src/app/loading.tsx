@@ -1,7 +1,7 @@
 type Props = {}
-function loading({}: Props) {
+function Loading({}: Props) {
   return (
-    <div>loading</div>
+    <div>Loading</div>
   )
 }
-export default loading
+export default Loading

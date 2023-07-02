@@ -1,6 +1,8 @@
-import Nav from "../../components/Home Components/Nav";
-import "./globals.css";
+
+import "../app/globals.css"
+
 import { Poppins } from "next/font/google";
+import Nav from "../../components/Home Components/Nav";
 
 const inter = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -9,7 +11,7 @@ const inter = Poppins({
 
 export const metadata = {
   title: "Carlos Castro Migration",
-  description: " Carlos Castro Migration and Educatoin Services",
+  description: " Carlos Castro Migration and Education Services",
 };
 
 export default function RootLayout({
@@ -19,10 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true} className={inter.className}>
+      <body className={inter.className}>
         <main>
           <Nav />
-          {children}
+          <div>{children}</div>
         </main>
       </body>
     </html>
