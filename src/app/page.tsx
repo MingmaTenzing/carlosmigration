@@ -7,10 +7,21 @@ import Reviews from "../../components/Home Components/Reviews";
 import RecentBlogs from "../../components/Home Components/RecentBlogs";
 import HeroServices from "../../components/Home Components/HeroServices";
 import Nav from "../../components/Home Components/Nav";
+import Head from "next/head";
 
+
+export const metadata = {
+  title: "Carlos Castro Migration",
+  description: " Carlos Castro Migration and Education Services",
+};
+
+console.log(metadata.title)
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>{metadata.title}</title>
+      </Head>
    
       <Hero />
       <HeroServices />

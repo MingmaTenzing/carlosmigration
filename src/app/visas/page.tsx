@@ -11,7 +11,10 @@ import tourist from "../../../assests/tourist.jpg"
 import { ChevronRightIcon } from "@heroicons/react/24/outline"
 import HeroBackground from "../../../utilities/HeroBackground"
 
-
+export const metadata = {
+  title: "Carlos Castro Migration",
+  description: " Carlos Castro Migration and Education Services",
+};
 type Props = {}
 function Visas({}: Props) {
     const router = useRouter();

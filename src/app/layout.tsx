@@ -8,7 +8,6 @@ const inter = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
-
 export const metadata = {
   title: "Carlos Castro Migration",
   description: " Carlos Castro Migration and Education Services",
