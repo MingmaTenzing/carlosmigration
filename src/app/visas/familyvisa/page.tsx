@@ -1,14 +1,22 @@
 'use client'
 import { TwitterTimelineEmbed } from "react-twitter-embed"
+import { Metadata } from "next"
 
 import VisaNavigation from "../../../../utilities/VisaNavigation"
 import Image from "next/image"
-import FamilyVisa from "../../../../assests/Family bg.jpg"
+import posterImg from "../../../../assests/Family bg.jpg"
 import HeroBackground from "../../../../utilities/HeroBackground"
 import bg from "../../../../assests/family visa.jpg"
 
 type Props = {}
+ export const metadata: Metadata = {
+  title: "Family Visa",
+  description: " Carlos Castro Migration and Education Services",
+};
+
 function familyVisa({}: Props) {
+
+ 
   return (
     <>
       <div>
@@ -24,7 +32,7 @@ function familyVisa({}: Props) {
         {/** VISA INFORMATION BLOCK */}
         <div className=" lg:w-1/2 space-y-5 mt-10 lg:mt-0 ">
           <Image
-            src={FamilyVisa}
+            src={posterImg}
             width={750}
             height={420}
             alt="Student Visa Image"
@@ -174,4 +182,4 @@ function familyVisa({}: Props) {
     </>
   )
 }
-export default familyVisa
+export default familyVisa;
