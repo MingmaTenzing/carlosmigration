@@ -9,12 +9,12 @@ function VisaNavigation({}: Props) {
   return (
     <div className="  lg:w-[320px] ">
       <Link
-        href="/"
+        href="/visas/categories/studentvisa"
         className=" h-[60px] group  justify-between relative hover:text-white  bg-gray-100 p-2 flex items-center "
       >
         <h2
           className={` z-10 ${
-            path == "/visas/studentvisa" ? "text-white" : " "
+            path == "/visas/categories/studentvisa" ? "text-white" : " "
           }`}
         >
           {" "}
@@ -24,17 +24,17 @@ function VisaNavigation({}: Props) {
 
         <span
           className={`left-0  group-hover:right-0 w-0 h-full group-hover:w-full transition-all ease-linear duration-300  absolute   bg-orange ${
-            path == "/visas/studentvisa" ? "bg-orange   w-full" : " "
+            path == "/visas/categories/studentvisa" ? "bg-orange   w-full" : " "
           }`}
         ></span>
       </Link>
       <Link
-        href="/"
+        href="/visas/categories/skilledvisa"
         className=" h-[60px] group  justify-between relative hover:text-white  bg-gray-100 p-2 flex items-center "
       >
         <h2
           className={` z-10 ${
-            path == "/visas/skilledvisa" ? "text-white" : " "
+            path == "/visas/categories/skilledvisa" ? "text-white" : " "
           }`}
         >
           {" "}
@@ -44,17 +44,17 @@ function VisaNavigation({}: Props) {
 
         <span
           className={`left-0  group-hover:right-0 w-0 h-full group-hover:w-full transition-all ease-linear duration-300  absolute   bg-orange ${
-            path == "/visas/skilledvisa" ? "bg-orange   w-full" : " "
+            path == "/visas/categories/skilledvisa" ? "bg-orange   w-full" : " "
           }`}
         ></span>
       </Link>
       <Link
-        href="/"
+        href="/visas/categories/familyvisa"
         className=" h-[60px] group  justify-between relative hover:text-white  bg-gray-100 p-2 flex items-center "
       >
         <h2
           className={` z-10 ${
-            path == "/visas/familyvisa" ? "text-white" : " "
+            path == "/visas/categories/familyvisa" ? "text-white" : " "
           }`}
         >
           {" "}
@@ -64,17 +64,17 @@ function VisaNavigation({}: Props) {
 
         <span
           className={`left-0  group-hover:right-0 w-0 h-full group-hover:w-full transition-all ease-linear duration-300  absolute   bg-orange ${
-            path == "/visas/familyvisa" ? "bg-orange   w-full" : " "
+            path == "/visas/categories/familyvisa" ? "bg-orange   w-full" : " "
           }`}
         ></span>
       </Link>
       <Link
-        href="/"
+        href="/visas/categories/employersponsoredvisa"
         className=" h-[60px] group  justify-between relative hover:text-white  bg-gray-100 p-2 flex items-center "
       >
         <h2
           className={` z-10 ${
-            path == "/visas/employersponsoredvisa" ? "text-white" : " "
+            path == "/visas/categories/employersponsoredvisa" ? "text-white" : " "
           }`}
         >
           {" "}
@@ -84,17 +84,17 @@ function VisaNavigation({}: Props) {
 
         <span
           className={`left-0  group-hover:right-0 w-0 h-full group-hover:w-full transition-all ease-linear duration-300  absolute   bg-orange ${
-            path == "/visas/employersponsoredvisa" ? "bg-orange   w-full" : " "
+            path == "/visas/categories/employersponsoredvisa" ? "bg-orange   w-full" : " "
           }`}
         ></span>
       </Link>
       <Link
-        href="/"
+        href="/visas/categories/businessvisa"
         className=" h-[60px] group  justify-between relative hover:text-white  bg-gray-100 p-2 flex items-center "
       >
         <h2
           className={` z-10 ${
-            path == "/visas/businessvisa" ? "text-white" : " "
+            path == "/visas/categories/businessvisa" ? "text-white" : " "
           }`}
         >
           {" "}
@@ -104,16 +104,16 @@ function VisaNavigation({}: Props) {
 
         <span
           className={`left-0  group-hover:right-0 w-0 h-full group-hover:w-full transition-all ease-linear duration-300  absolute   bg-orange ${
-            path == "/visas/businessvisa" ? "bg-orange   w-full" : " "
+            path == "/visas/categories/businessvisa" ? "bg-orange   w-full" : " "
           }`}
         ></span>
       </Link>
       <Link
-        href="/"
+        href="/visas/categories/othervisa"
         className=" h-[60px] group  justify-between relative hover:text-white  bg-gray-100 p-2 flex items-center "
       >
         <h2
-          className={` z-10 ${path == "/visas/othervisa" ? "text-white" : " "}`}
+          className={` z-10 ${path == "/visas/categories/othervisa" ? "text-white" : " "}`}
         >
           {" "}
           Other Visa{" "}
@@ -122,7 +122,7 @@ function VisaNavigation({}: Props) {
 
         <span
           className={`left-0  group-hover:right-0 w-0 h-full group-hover:w-full transition-all ease-linear duration-300  absolute   bg-orange ${
-            path == "/visas/othervisa" ? "bg-orange   w-full" : " "
+            path == "/visas/categories/othervisa" ? "bg-orange   w-full" : " "
           }`}
         ></span>
       </Link>
