@@ -24,7 +24,7 @@ function Visas({}: Props) {
 
       <div id="VISA SERVICES CONTAINER" className=" mt-10 flex md:justify-center md:flex-row md:flex-wrap flex-col items-center">
             {/** OFFERING  */}
-            <div className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
+            <div onClick={() => router.push("/visas/categories/studentvisa")} className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
           <div className=" relative w-full h-[45%]">
             <Image
               src={studentVisa}
@@ -32,6 +32,7 @@ function Visas({}: Props) {
               height={250}
               alt="Services Image"
               className=" h-full w-full  object-cover"
+              
             />
             <span className=" bg-[#201c2c] h-full w-full absolute  top-0 left-0 opacity-0 group-hover:opacity-60 transition-all ease-linear duration-300 "></span>
           </div>

@@ -23,42 +23,64 @@ function familyVisa({}: Props) {
           src={posterImg}
           width={750}
           height={420}
-          alt="Student Visa Image"
+          alt="Family Visa Image"
           className=" w-[750px] lg:w-full h-[420px] object-cover object-center"
         />
         <h1 className=" font-bold text-2xl md:text-3xl lg:text-4xl mt-5">
-          Grab Your Golden Ticket to Study in Australia: A Motivating Guide to
-          Student Visas
+          Love Conquers All: Your Journey to a Life of Happiness and
+          Togetherness in Australia
         </h1>
         <p>
-          Are you dreaming of studying in Australia? It&apos;s time to turn that
-          dream into reality! With its top-notch universities, diverse culture,
-          and stunning landscapes, Australia offers an incredible educational
-          experience. But before you embark on this exciting journey, you need
-          to secure a student visa. Don&apos;t worry, we&apos;re here to guide
-          you through the process and introduce you to Carlos, your golden
-          ticket to success through Golden Ticket Migration!
+          Are you ready to take the leap of love and create a beautiful future
+          with your partner in Australia? At Carlos' Migration and Education
+          Services, we understand the power of love and the importance of being
+          together. Let us guide you through the process of obtaining partner
+          visas, tailored to your unique relationship, with the expertise of
+          Golden Ticket Migration.
         </p>
 
         <h2 className=" font-semibold text-xl md:text-2xl ">Overview</h2>
         <p>
-          A student visa is your key to unlocking the door to world-class
-          education in Australia. It allows you to pursue your chosen course
-          while immersing yourself in a vibrant and multicultural environment.
-          So let&apos;s dive into the details and discover how you can make
-          thiss happen!
+          Partner visas offer a pathway for couples to unite in Australia,
+          whether through marriage, de facto relationships, or being a partner
+          of a New Zealand citizen living in Australia. Depending on your
+          specific circumstances, different options are available to you.
         </p>
-        <h2 className=" font-semibold text-xl md:text-2xl ">Eligibility</h2>
+        <h2 className=" font-semibold text-xl md:text-2xl ">
+          Eligibility & Conditions
+        </h2>
         <p>
-          To be eligible for a student visa, you need to meet certain criteria.
-          Firstly, you must have been accepted into a registered course at an
-          Australian educational institution. This could be a university,
-          vocational training, English language course, or even a school.
-          Additionally, you must demonstrate that you have sufficient funds to
-          cover your tuition fees, living expenses, and travel costs. Finally,
-          you must prove your proficiency in English by taking an accepted
-          language test, such as IELTS or TOEFL.
+          To be eligible for partner visas, certain requirements must be met:
         </p>
+        <ul className=" space-y-3">
+          <li>
+            <span className=" font-semibold">
+              Fiancé (Prospective Marriage) Visa:{" "}
+            </span>{" "}
+            This visa allows entry to Australia with work rights for 9 months,
+            during which you are expected to get married and apply for the
+            onshore 820/801 visa.
+          </li>
+          <li>
+            <span className=" font-semibold">Partner Visa:</span> You can apply
+            for this visa if you have evidence of being in a marriage or de
+            facto relationship for at least 12 months, or have formally
+            registered your de facto relationship.
+          </li>
+          <li>
+            <span className=" font-semibold">
+              {" "}
+              Partners of New Zealand Citizens:
+            </span>{" "}
+            As the partner of a New Zealand citizen living in Australia, you may
+            be eligible for a temporary 5-year partner visa.
+          </li>
+          <li>
+            The application process involves two stages: the provisional visa
+            and the permanent residency application. The staged process is in
+            place to ensure the authenticity of relationships.
+          </li>
+        </ul>
         <h2 className=" font-semibold text-xl md:text-2xl ">Conditions</h2>
         <p>
           Once you have your student visa, there are a few conditions you must

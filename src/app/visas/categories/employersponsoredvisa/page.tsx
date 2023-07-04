@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 import VisaNavigation from "../../../../../utilities/VisaNavigation";
 import Image from "next/image";
-import posterImg from "../../../../../assests/Family bg.jpg";
+import posterImg from "../../../../../assests/Employer.jpg";
 import HeroBackground from "../../../../../utilities/HeroBackground";
 import bg from "../../../../assests/family visa.jpg";
 
