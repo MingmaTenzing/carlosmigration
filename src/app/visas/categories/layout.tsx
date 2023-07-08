@@ -17,12 +17,12 @@ export default function VisaLayout({
     <section className=" lg:flex lg:space-x-10 lg:justify-center md:p-8 p-4">
       {/* Include shared UI here e.g. a header or sidebar */}
 
-      <div>
+      <div className=" lg:w-[320px]">
         <VisaNavigation />
       </div>
       <div className=" lg:w-1/2 space-y-5 mt-10 lg:mt-0 ">{children}</div>
       {/** TWITTER TIMELINE */}
-      <div className=" hidden lg:flex">
+      <div className=" hidden lg:flex lg:w-[320px]">
         <TwitterTimelineEmbed
           sourceType="profile"
           screenName="CHARLIESHUN"
