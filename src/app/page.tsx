@@ -15,13 +15,10 @@ export const metadata = {
   description: " Carlos Castro Migration and Education Services",
 };
 
-console.log(metadata.title)
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>{metadata.title}</title>
-      </Head>
+    
    
       <Hero />
       <HeroServices />

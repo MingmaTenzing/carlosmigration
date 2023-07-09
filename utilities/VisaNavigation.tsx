@@ -7,7 +7,7 @@ type Props = {};
 function VisaNavigation({}: Props) {
     const path = usePathname();
   return (
-    <div className="  lg:w-[320px] ">
+    <div className="  lg:w-[300px] ">
       <Link
         href="/visas/categories/studentvisa"
         className=" h-[60px] group  justify-between relative hover:text-white  bg-gray-100 p-2 flex items-center "

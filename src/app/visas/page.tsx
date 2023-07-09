@@ -2,7 +2,7 @@
 import Image from "next/image"
 import bg from "../../../assests/Visa Background.jpg"
 import familyvisa from "../../../assests/family visa.jpg"
-import { useRouter } from "next/navigation"
+import {  useRouter } from "next/navigation"
 import studentVisa from '../../../assests/student visa.jpg'
 import nurse from "../../../assests/Nurse.jpg"
 import employer from "../../../assests/Employer.jpg"
@@ -18,6 +18,8 @@ export const metadata = {
 type Props = {}
 function Visas({}: Props) {
     const router = useRouter();
+    console.log(router.query)
+    
   return (
     <div>
         <HeroBackground title="Visa Services" subTitle="Get the best services across all visa categories" bg={bg} />

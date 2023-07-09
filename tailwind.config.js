@@ -19,6 +19,7 @@ module.exports = {
         orange: "#ff5c54",
         reviewText: "#ff5857",
       },
+
     },
   },
   plugins: [require("tailwind-scrollbar-hide")],

@@ -34,7 +34,9 @@ function subclass400({}: Props) {
         knowledge and are invited by an Australian organization to contribute to
         a specific project or event.
       </p>
-      <h2 className=" font-semibold text-xl md:text-2xl ">Eligibility: To be eligible for the 400 visa, you must:</h2>
+      <h2 className=" font-semibold text-xl md:text-2xl ">
+        Eligibility: To be eligible for the 400 visa, you must:
+      </h2>
       <ul className=" space-y-3">
         <li>
           1. Have specialized skills, knowledge, or experience relevant to the
@@ -64,6 +66,74 @@ function subclass400({}: Props) {
         </li>
         <li>4. Comply with all Australian laws and regulations.</li>
       </ul>
+      <h2 className=" font-semibold text-xl md:text-2xl ">
+        Requirements: When applying for the 400 visa, you will need to provide
+        the following:
+      </h2>
+      <ul className=" space-y-3">
+        <li>
+          1. A valid passport with at least six months of validity remaining.
+        </li>
+        <li>
+          2. Evidence of your specialized skills, knowledge, or experience.
+        </li>
+        <li>
+          3. An invitation or sponsorship letter from the Australian
+          organization outlining the details of the project or event.{" "}
+        </li>
+        <li>
+          4. Proof of health insurance coverage for the duration of your stay.
+        </li>
+        <li>5. A valid character clearance or police certificate.</li>
+      </ul>
+      <h2 className=" font-semibold text-xl md:text-2xl "> Steps to Apply: </h2>
+      <ul className=" space-y-3">
+        <li>
+          1. Consult Carlos from Golden Ticket Migration: Reach out to Carlos
+          for personalized guidance and assistance throughout the visa
+          application process.
+        </li>
+        <li>
+          2. Gather Required Documents: Collect all the necessary documents,
+          including your passport, evidence of skills or experience, invitation
+          or sponsorship letter, health insurance proof, and character
+          clearance.
+        </li>
+        <li>
+          3. Complete the Application Form: Fill out the application form for
+          the 400 visa accurately and provide all the required information.
+        </li>
+        <li>
+          4. Pay the Application Fee: Submit the applicable visa application
+          fee, which can vary based on individual circumstances.
+        </li>
+        <li>
+          5. Submit the Application: Lodge your visa application online through
+          the official Australian government website or as directed by Carlos.
+        </li>
+        <li>
+          6. Await a Decision: The Department of Home Affairs will assess your
+          application. Be patient as processing times may vary.
+        </li>
+        <li>
+          7. Obtain Visa Grant: If your application is approved, you will
+          receive a visa grant letter specifying the conditions and validity
+          period of your 400 visa.
+        </li>
+        <li>
+          8. Prepare for Your Australian Adventure: Pack your bags, book your
+          flights, and get ready for an exciting journey to Australia!
+        </li>
+      </ul>
+      <h2 className=" font-semibold text-xl md:text-2xl "> Conclusion </h2>
+      <p>
+        Applying for the 400 visa may seem like a daunting task, but with Carlos
+        from Golden Ticket Migration by your side, you'll have the support and
+        guidance you need. Take action now and start your journey towards
+        working in Australia. Don't miss out on the opportunity to explore this
+        beautiful country and gain valuable experience. Reach out to Carlos
+        today and let him help you secure your golden ticket to Australia!
+      </p>
     </div>
   );
 }
