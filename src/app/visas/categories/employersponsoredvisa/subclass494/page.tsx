@@ -2,7 +2,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import posterImg from "../../../../../../assests/subclass408bg.jpg";
+import posterImg from "../../../../../../assests/subclass494.jpg";
 
 type Props = {};
 
