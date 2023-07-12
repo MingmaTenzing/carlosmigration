@@ -2,12 +2,12 @@
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Employer Sponsored Visa",
+  title: "Subclass 482",
   description: "Find the Best Visa For You"
  
 }
 
-export default function VisaLayout({
+export default function Subclass482Layout({
     children, // will be a page or nested layout
   }: {
     children: React.ReactNode
