@@ -52,19 +52,34 @@ function employersponsoredVisa({}: Props) {
           Detail Information of Subclass visas
         </h2>
         <div className=" flex flex-col  space-y-3">
-          <Link href="/visas/categories/employersponsoredvisa/subclass400" className=" underline text-blue-800">
+          <Link
+            href="/visas/categories/employersponsoredvisa/subclass400"
+            className=" underline text-blue-800"
+          >
             Subclass 400
           </Link>
-          <Link href="/" className=" underline text-blue-800">
+          <Link
+            href="/visas/categories/employersponsoredvisa/subclass408"
+            className=" underline text-blue-800"
+          >
             Subclass 408{" "}
           </Link>
-          <Link href="/" className=" underline text-blue-800">
+          <Link
+            href="/visas/categories/employersponsoredvisa/subclass407"
+            className=" underline text-blue-800"
+          >
             Subclass 407{" "}
           </Link>
-          <Link href="/" className=" underline text-blue-800">
+          <Link
+            href="/visas/categories/employersponsoredvisa/subclass482"
+            className=" underline text-blue-800"
+          >
             Subclass 482
           </Link>
-          <Link href="/" className=" underline text-blue-800">
+          <Link
+            href="/visas/categories/employersponsoredvisa/subclass494"
+            className=" underline text-blue-800"
+          >
             Subclass 494
           </Link>
         </div>
