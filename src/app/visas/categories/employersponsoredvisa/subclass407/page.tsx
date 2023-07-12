@@ -1,8 +1,7 @@
 "use client";
 import { Metadata } from "next";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
-import posterImg from "../../../../../../assests/Subclass407.jpg";
+import posterImg from "../../../../../../assests/subclass407.jpg";
 
 type Props = {};
 
