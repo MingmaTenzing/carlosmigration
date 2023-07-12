@@ -38,13 +38,13 @@ function employersponsoredVisa({}: Props) {
           range of visa options for international workers. Among these,
           employer-sponsored visas hold significant appeal, enabling individuals
           to secure employment with Australian companies and contribute to the
-          nation's thriving industries. In this article, we delve into the
+          nation&apos;s thriving industries. In this article, we delve into the
           intricacies of several prominent employer-sponsored visa subclasses:
           400, 408, 407, 482, and 494. By exploring their eligibility criteria,
           conditions, and application procedures, aspiring visa applicants can
           gain a comprehensive understanding of these pathways and make informed
           decisions about their professional journey in Australia. Whether
-          you're a prospective employee or an employer seeking to sponsor
+          you&apos;re a prospective employee or an employer seeking to sponsor
           skilled talent, this guide will serve as a valuable resource to
           navigate the complexities of employer-sponsored visas in Australia.
         </p>

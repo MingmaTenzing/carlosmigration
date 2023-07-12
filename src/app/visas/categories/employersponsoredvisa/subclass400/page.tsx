@@ -20,7 +20,7 @@ function subclass400({}: Props) {
       <p>
         Introduction: Dreaming of exploring the Land Down Under? The Australian
         400 visa could be your golden ticket to experience the wonders of
-        Australia. In this article, we'll provide you with an easy-to-understand
+        Australia. In this article, we&apos;ll provide you with an easy-to-understand
         overview of the 400 visa, its eligibility criteria, conditions,
         requirements, and the steps to apply. Remember, Carlos from Golden
         Ticket Migration is here to guide you through the process and make your
@@ -128,9 +128,9 @@ function subclass400({}: Props) {
       <h2 className=" font-semibold text-xl md:text-2xl "> Conclusion </h2>
       <p>
         Applying for the 400 visa may seem like a daunting task, but with Carlos
-        from Golden Ticket Migration by your side, you'll have the support and
+        from Golden Ticket Migration by your side, you&apos;ll have the support and
         guidance you need. Take action now and start your journey towards
-        working in Australia. Don't miss out on the opportunity to explore this
+        working in Australia. Don&apos;t miss out on the opportunity to explore this
         beautiful country and gain valuable experience. Reach out to Carlos
         today and let him help you secure your golden ticket to Australia!
       </p>

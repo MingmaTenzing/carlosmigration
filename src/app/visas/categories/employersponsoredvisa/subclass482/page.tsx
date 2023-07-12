@@ -27,7 +27,7 @@ function Subclass482({}: Props) {
         are here to help you unlock your Australian dream! With the Temporary
         Skill Shortage Visa, also known as the 482 Visa, you can live and work
         in Australia while pursuing your goals and building a brighter future.
-        Let's dive into the details and see how you can make this incredible
+        Let&apos; dive into the details and see how you can make this incredible
         opportunity a reality!
       </p>
       <h2 className="  font-semibold text-xl md:text-2xl">Overview</h2>
@@ -97,7 +97,7 @@ function Subclass482({}: Props) {
         </li>
         <li>
           5. Compliance: You must comply with all conditions and requirements
-          related to your occupation's licenses, registrations, or memberships.
+          related to your occupation&apos; licenses, registrations, or memberships.
         </li>
       </ul>
       <h2 className="  font-semibold text-xl md:text-2xl">Steps to Apply</h2>
@@ -127,7 +127,7 @@ function Subclass482({}: Props) {
         </li>
         <li>
           6. Follow-up and Updates: Stay in touch with Carlos and our team to
-          receive updates on your application's progress.
+          receive updates on your application&apos; progress.
         </li>
         <p>
           Now is the time to take action and embark on your Australian
@@ -135,12 +135,12 @@ function Subclass482({}: Props) {
           today to kick-start your journey towards obtaining the 482 Visa. Our
           expert guidance and support will ensure a smooth and successful
           application process, bringing you one step closer to realizing your
-          dreams in Australia. Don't let this golden opportunity slip away—reach
+          dreams in Australia. Don&apos; let this golden opportunity slip away—reach
           out to us now!
         </p>
         <p>
           Remember, Carlos and Golden Ticket Migration are here to make your
-          dreams come true in Australia. Let's work together to unlock your
+          dreams come true in Australia. Let&apos; work together to unlock your
           Australian dream!
         </p>
       </ul>

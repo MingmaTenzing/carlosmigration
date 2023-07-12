@@ -32,7 +32,7 @@ function familyVisa({}: Props) {
         </h1>
         <p>
           Are you ready to take the leap of love and create a beautiful future
-          with your partner in Australia? At Carlos' Migration and Education
+          with your partner in Australia? At Carlos Migration and Education
           Services, we understand the power of love and the importance of being
           together. Let us guide you through the process of obtaining partner
           visas, tailored to your unique relationship, with the expertise of

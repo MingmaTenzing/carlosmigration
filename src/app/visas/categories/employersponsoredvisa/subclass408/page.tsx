@@ -24,7 +24,7 @@ function Subclass408({}: Props) {
       <p>
         Are you ready to embark on an exciting journey of exploration and
         personal growth? Australia, with its breathtaking landscapes, vibrant
-        culture, and abundant opportunities, awaits your arrival. If you're
+        culture, and abundant opportunities, awaits your arrival. If you&apos;re
         looking to experience life Down Under and make the most of your talents,
         the Australian 408 visa might just be your golden ticket to adventure!
       </p>
@@ -33,7 +33,7 @@ function Subclass408({}: Props) {
         The Australian 408 visa, also known as the Temporary Activity visa,
         opens doors to a world of possibilities. It allows individuals to come
         to Australia for a specific temporary purpose or activity. Whether
-        you're an artist, performer, athlete, academic, or skilled professional,
+        you&apos;re an artist, performer, athlete, academic, or skilled professional,
         this visa offers you the chance to showcase your talents and contribute
         to the Australian community.
       </p>
@@ -66,7 +66,7 @@ function Subclass408({}: Props) {
         Conditions and Requirements
       </h2>
       <p>
-        Once you've been granted the 408 visa, it's important to be aware of the
+        Once you&apos;ve been granted the 408 visa, it&apos;s important to be aware of the
         conditions and requirements associated with it:
       </p>
       <ul className=" space-y-3">
@@ -94,7 +94,7 @@ function Subclass408({}: Props) {
 
       <h2 className="  font-semibold text-xl md:text-2xl"> Steps to Apply:</h2>
       <p>
-        Now that you're motivated to pursue your Australian adventure, let's
+        Now that you&apos;re motivated to pursue your Australian adventure, let&apos;s
         take a look at the steps to apply for the 408 visa:
       </p>
       <ul className=" space-y-3">
@@ -123,7 +123,7 @@ function Subclass408({}: Props) {
           Australian adventure.
         </li>
         <li>
-          5. Get ready for the journey: Once your visa is granted, it's time to
+          5. Get ready for the journey: Once your visa is granted, it&apos;s time to
           embark on your exciting Australian adventure! Prepare for your trip,
           pack your bags with enthusiasm, and get ready to make lifelong
           memories and seize every opportunity that comes your way.
@@ -135,8 +135,8 @@ function Subclass408({}: Props) {
       </h2>
       <p>
         The Australian 408 visa is your golden ticket to unlock new
-        opportunities and experiences. It's a chance to challenge yourself,
-        explore a vibrant country, and share your talents with the world. Don't
+        opportunities and experiences. It&apos;s a chance to challenge yourself,
+        explore a vibrant country, and share your talents with the world. Don&apos;t
         let this incredible opportunity pass you by!
       </p>
       <p>

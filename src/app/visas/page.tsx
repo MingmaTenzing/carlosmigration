@@ -18,8 +18,6 @@ export const metadata = {
 type Props = {}
 function Visas({}: Props) {
     const router = useRouter();
-    console.log(router.query)
-    
   return (
     <div>
         <HeroBackground title="Visa Services" subTitle="Get the best services across all visa categories" bg={bg} />

@@ -23,14 +23,14 @@ function Subclass494({}: Props) {
       </h1>
       <p>
         Hey there! Are you ready to explore the amazing opportunities Australia
-        has to offer through the 494 visa? Let's dive into it together, in an
+        has to offer through the 494 visa? Let&apos;s dive into it together, in an
         informal, motivational, and easy-to-understand way!
       </p>
       <h2 className="  font-semibold text-xl md:text-2xl">Overview</h2>
       <p>
         The 494 visa, also known as the Skilled Employer-Sponsored Regional
         (Provisional) visa, is a pathway to live and work in regional areas of
-        Australia. It allows skilled workers to contribute to the country's
+        Australia. It allows skilled workers to contribute to the country&apos;s
         regional development while enjoying the incredible Australian lifestyle.
       </p>
       <h2 className="  font-semibold text-xl md:text-2xl">Eligibility</h2>
@@ -51,10 +51,10 @@ function Subclass494({}: Props) {
       </p>
       <h2 className="  font-semibold text-xl md:text-2xl">Requirements</h2>
       <p>
-        To apply for the 494 visa, you'll need to gather some documents and meet
+        To apply for the 494 visa, you&apos;ll need to gather some documents and meet
         specific requirements. This may include proof of your skills,
         qualifications, work experience, English language proficiency, health
-        examinations, and character checks. Don't worry; Carlos from Golden
+        examinations, and character checks. Don&apos;t worry; Carlos from Golden
         Ticket Migration is here to guide you through the entire process and
         help you understand the requirements.
       </p>
@@ -75,18 +75,18 @@ function Subclass494({}: Props) {
           circumstances.
         </li>
         <li>
-          3. Document Gathering: We'll provide you with a comprehensive
+          3. Document Gathering: We&apos;ll provide you with a comprehensive
           checklist of the documents required for the visa application. Carlos
           will assist you in gathering and organizing the necessary paperwork
           correctly.
         </li>
         <li>
           4. Lodging the Application: Our team will prepare and lodge your 494
-          visa application, ensuring it meets all the requirements. We'll handle
+          visa application, ensuring it meets all the requirements. We&apos;ll handle
           the paperwork, making the process smooth and stress-free for you.
         </li>
         <li>
-          5. Follow-up and Updates: Throughout the application process, we'll
+          5. Follow-up and Updates: Throughout the application process, we&apos;ll
           keep you informed about the progress and any updates. We understand
           the importance of timely communication and will be there for you every
           step of the way.
@@ -95,8 +95,8 @@ function Subclass494({}: Props) {
       <p>
         So, are you ready to embark on an exciting journey to live and work in
         regional Australia through the 494 visa? Contact Carlos and the Golden
-        Ticket Migration team today! Let's make your dreams a reality and open
-        the door to a brighter future. Don't miss out on this golden
+        Ticket Migration team today! Let&apos;s make your dreams a reality and open
+        the door to a brighter future. Don&apos;t miss out on this golden
         opportunity!
       </p>
     </div>
