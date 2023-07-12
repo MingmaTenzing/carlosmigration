@@ -1,4 +1,4 @@
-
+'use client'
 import Image from "next/image";
 import posterImg from "../../../../../assests/Students Background Image.jpg";
 

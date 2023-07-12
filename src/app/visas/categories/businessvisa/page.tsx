@@ -1,3 +1,4 @@
+'use client'
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import { Metadata } from "next";
 

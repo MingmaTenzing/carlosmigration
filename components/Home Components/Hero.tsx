@@ -1,4 +1,4 @@
-
+"use client"
 import Image from "next/image";
 import travel from "../../assests/travel.jpg";
 import passport from "../../assests/passport.jpg";

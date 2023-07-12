@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image"
 import bg from "../../../assests/Visa Background.jpg"
 import familyvisa from "../../../assests/family visa.jpg"
