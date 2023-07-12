@@ -3,10 +3,7 @@ import { Metadata } from "next";
 import VisaNavigation from "../../../../utilities/VisaNavigation";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 
-export const metadata: Metadata = {
-  title: "Visas",
-  description: "Find the Best Visa For You",
-};
+
 
 export default function VisaLayout({
   children, // will be a page or nested layout
