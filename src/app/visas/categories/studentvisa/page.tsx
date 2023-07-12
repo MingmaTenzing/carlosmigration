@@ -1,18 +1,9 @@
-"use client";
-import { TwitterTimelineEmbed } from "react-twitter-embed";
-import { Metadata } from "next";
 
-import VisaNavigation from "../../../../../utilities/VisaNavigation";
 import Image from "next/image";
 import posterImg from "../../../../../assests/Students Background Image.jpg";
-import HeroBackground from "../../../../../utilities/HeroBackground";
-import bg from "../../../../assests/family visa.jpg";
 
 type Props = {};
-export const metadata: Metadata = {
-  title: "Family Visa",
-  description: " Carlos Castro Migration and Education Services",
-};
+
 
 function studentVisa({}: Props) {
   return (

@@ -1,4 +1,3 @@
-"use client";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import { Metadata } from "next";
 
@@ -10,10 +9,7 @@ import bg from "../../../../assests/family visa.jpg";
 import Link from "next/link";
 
 type Props = {};
-export const metadata: Metadata = {
-  title: "Family Visa",
-  description: " Carlos Castro Migration and Education Services",
-};
+
 
 function skilledVisa({}: Props) {
   return (
