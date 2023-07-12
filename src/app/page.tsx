@@ -1,4 +1,4 @@
-"use client";
+
 import Hero from "../../components/Home Components/Hero";
 import AboutUs from "../../components/Home Components/AboutUs";
 import Offering from "../../components/Home Components/Offering";
@@ -9,7 +9,6 @@ import HeroServices from "../../components/Home Components/HeroServices";
 import Nav from "../../components/Home Components/Nav";
 import Head from "next/head";
 
-
 export const metadata = {
   title: "Carlos Castro Migration",
   description: " Carlos Castro Migration and Education Services",
@@ -18,8 +17,6 @@ export const metadata = {
 export default function Home() {
   return (
     <div>
-    
-   
       <Hero />
       <HeroServices />
       <AboutUs />
