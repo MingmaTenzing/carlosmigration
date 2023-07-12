@@ -1,4 +1,3 @@
-"use client";
 import { Metadata } from "next";
 import VisaNavigation from "../../../../utilities/VisaNavigation";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
