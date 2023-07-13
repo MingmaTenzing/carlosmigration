@@ -1,15 +1,14 @@
-'use client'
-import { TwitterTimelineEmbed } from "react-twitter-embed";
+import Image from "next/image";
+import posterImg from "../../../../../assests/businessvisa.jpg";
 import { Metadata } from "next";
 
-import VisaNavigation from "../../../../../utilities/VisaNavigation";
-import Image from "next/image";
-import posterImg from "../../../../../assests/Business.jpg";
-import HeroBackground from "../../../../../utilities/HeroBackground";
-import bg from "../../../../assests/family visa.jpg";
+export const metadata: Metadata = {
+  title: "Business Visa Subclass 188",
+  description:
+    "Unlock Boundless Opportunities: Business Innovation and Investment Visa (subclass 188)",
+};
 
 type Props = {};
-
 
 function businessVisa({}: Props) {
   return (
@@ -24,110 +23,63 @@ function businessVisa({}: Props) {
           className=" w-[750px] lg:w-full h-[420px] object-cover object-center"
         />
         <h1 className=" font-bold text-2xl md:text-3xl lg:text-4xl mt-5">
-          Grab Your Golden Ticket to Study in Australia: A Motivating Guide to
-          Student Visas
+          Unlock Boundless Opportunities: Business Innovation and Investment
+          Visa (subclass 188)
         </h1>
         <p>
-          Are you dreaming of studying in Australia? It&apos;s time to turn that
-          dream into reality! With its top-notch universities, diverse culture,
-          and stunning landscapes, Australia offers an incredible educational
-          experience. But before you embark on this exciting journey, you need
-          to secure a student visa. Don&apos;t worry, we&apos;re here to guide
-          you through the process and introduce you to Carlos, your golden
-          ticket to success through Golden Ticket Migration!
+          The subclass 188 visa is a temporary visa that allows you to invest in
+          and live in Australia for four years. It's part of the Business
+          Innovation and Investment Program, which is all about encouraging
+          business-minded individuals like you to bring their talents and ideas
+          to Australia.
         </p>
 
-        <h2 className=" font-semibold text-xl md:text-2xl ">Overview</h2>
         <p>
-          A student visa is your key to unlocking the door to world-class
-          education in Australia. It allows you to pursue your chosen course
-          while immersing yourself in a vibrant and multicultural environment.
-          So let&apos;s dive into the details and discover how you can make
-          thiss happen!
+          Now, let's talk about the different streams within this visa program:
         </p>
-        <h2 className=" font-semibold text-xl md:text-2xl ">Eligibility</h2>
+        <h2 className=" font-semibold text-xl md:text-2xl ">
+          Business Innovation Stream
+        </h2>
         <p>
-          To be eligible for a student visa, you need to meet certain criteria.
-          Firstly, you must have been accepted into a registered course at an
-          Australian educational institution. This could be a university,
-          vocational training, English language course, or even a school.
-          Additionally, you must demonstrate that you have sufficient funds to
-          cover your tuition fees, living expenses, and travel costs. Finally,
-          you must prove your proficiency in English by taking an accepted
-          language test, such as IELTS or TOEFL.
+          This is for people with business skills who want to establish,
+          develop, or manage a new or existing business in Australia. To be
+          eligible, you need to achieve at least 65 points and be nominated by a
+          state or territory government. It's important to be under 55 years old
+          and meet specific business turnover and net assets requirements.
         </p>
-        <h2 className=" font-semibold text-xl md:text-2xl ">Conditions</h2>
+        <h2 className=" font-semibold text-xl md:text-2xl ">Investor Stream</h2>
         <p>
-          Once you have your student visa, there are a few conditions you must
-          abide by. These include maintaining full-time enrollment in your
-          chosen course, making satisfactory academic progress, and maintaining
-          adequate health insurance coverage throughout your stay in Australia.
-          It&apos;s important to adhere to these conditions to ensure a smooth
-          and successful academic journey.
+          If you're interested in making a designated investment of at least
+          AUD1.5 million in an Australian state or territory and maintaining
+          business and investment activity there, this stream is for you.
+          Similar to the Business Innovation stream, you need to achieve at
+          least 65 points and be nominated by a state or territory government.
+          Age requirements and net assets requirements also apply.
         </p>
-        <h2 className=" font-semibold text-xl md:text-2xl ">Conditions</h2>
+        <h2 className=" font-semibold text-xl md:text-2xl ">
+          Significant Investor Stream
+        </h2>
         <p>
-          To apply for a student visa, you will need to gather a few documents.
-          These typically include:
+          Are you willing to invest at least AUD5 million into complying
+          significant investments in Australia? This stream is designed for you.
+          You can be nominated by a state or territory government or Austrade on
+          behalf of the Australian government. This stream doesn't require
+          points, but you need to invest in complying investment funds before
+          your visa is granted.
         </p>
-        <ul className=" space-y-2">
-          <li>
-            1. Proof of enrollment: A letter of acceptance from your chosen
-            educational institution.
-          </li>
-          <li>
-            2. Financial documents: Evidence of sufficient funds to cover your
-            tuition fees and living expenses.
-          </li>
-          <li>
-            3. English proficiency: Results of an approved language test
-            demonstrating your language skills.
-          </li>
-          <li>
-            4. Genuine Temporary Entrant (GTE) statement: A written statement
-            explaining your intentions to study in Australia temporarily.
-          </li>
-          <li>
-            5. Health insurance: Proof of Overseas Student Health Cover (OSHC)
-            for the duration of your stay.
-          </li>
-        </ul>
+        <h2 className=" font-semibold text-xl md:text-2xl ">
+          Premium Investor Stream
+        </h2>
+        <p>
+          If you're ready to take it up a notch and invest at least AUD15
+          million into complying premium investments in Australia, this stream
+          is your golden opportunity. Austrade will reach out to suitable
+          candidates on behalf of the Australian government for nomination.
+        </p>
 
-        <h2 className=" font-semibold text-xl md:text-2xl ">Steps To Apply</h2>
-        <ul className=" space-y-2">
-          <li>
-            1. Consult Carlos at Golden Ticket Migration: Carlos and his team
-            are experts in student visa applications. They will guide you
-            through the process, answer your questions, and ensure you submit a
-            strong and compelling application.
-          </li>
-          <li>
-            2. Gather the required documents: Collect all the necessary
-            documents mentioned earlier. Make sure they are complete,
-            up-to-date, and meet the visa requirements.
-          </li>
-
-          <li>
-            3. Complete the online application: Visit the official Australian
-            Government&apos;s Department of Home Affairs website and fill out
-            the student visa application form accurately. Double-check all the
-            information before submitting.
-          </li>
-          <li>
-            4. Pay the application fee: The visa application process involves a
-            fee, which can be paid online through various payment methods.
-          </li>
-          <li>
-            5. Submit your application: Once you&apos;ve completed the form and
-            paid the fee, submit your application online. Keep a copy of the
-            receipt and any other relevant documents for your records.
-          </li>
-          <li>
-            6. Await a decision: The Department of Home Affairs will assess your
-            application and notify you of their decision. This may take some
-            time, so be patient.
-          </li>
-        </ul>
+        <h2 className=" font-semibold text-xl md:text-2xl ">
+          Entrepreneur Stream
+        </h2>
 
         <p>
           Carlos and Golden Ticket Migration: Carlos and the Golden Ticket
@@ -141,14 +93,42 @@ function businessVisa({}: Props) {
         <h2 className=" font-semibold text-xl md:text-2xl "> Conclusion</h2>
 
         <p>
-          Don&apos;t let your dreams of studying in Australia remain just
-          dreams. Take action today and embark on an exciting adventure of
-          learning, growth, and cultural exploration. Trust Carlos and Golden
-          Ticket Migration to guide you through the student visa application
-          process, ensuring you have the best chance of success. Your golden
-          ticket awaits - grab it now and unlock the door to a brighter future
-          Down Under!
+          Are you an aspiring entrepreneur with a funding agreement of at least
+          AUD200,000 from a third party? This stream is for those who have big
+          ideas and want to develop a business or commercialize a product or
+          service in Australia. You'll need to be nominated by a state or
+          territory government.
         </p>
+
+        <p>
+          Now, let's talk about the steps to apply for this visa. First, you
+          must submit an Expression of Interest (EOI) through SkillSelect. Then,
+          you need to be nominated by an eligible government organization. Once
+          you receive an invitation, you can proceed with your visa application.
+        </p>
+        <p>
+          Remember, this is not just about starting a business in Australia;
+          it's about embarking on a life-changing journey. And here's where
+          Carlos comes in. He's your guide and mentor throughout this incredible
+          process. Carlos will be there to support you, answer your questions,
+          and help you navigate any challenges that may come your way. Think of
+          him as your personal cheerleader, rooting for your success.
+        </p>
+        <p>
+          So, what are you waiting for? Take action now! Reach out to Carlos and
+          let the adventure begin. Your golden ticket to Australia and a world
+          of possibilities awaits. Believe in yourself, embrace the unknown, and
+          make that call to Carlos today. It's time to unlock your potential and
+          create the life you've always dreamed of.
+        </p>
+        <p>
+          Remember, the only way to make your dreams a reality is by taking that
+          first step. Start your journey to Australia, explore new horizons, and
+          build a prosperous future for yourself and your family. Your
+          entrepreneurial spirit is calling, and the Business Innovation and
+          Investment Visa is your gateway to success.
+        </p>
+        <p>Go ahead, seize this opportunity, and let the world witness your incredible journey. Your golden ticket to Australia is waiting for you.</p>
       </div>
     </>
   );
