@@ -5,6 +5,14 @@ import { supabase } from '../page';
 import { useEffect } from 'react';
 type Props = {}
 
+interface Blog {
+  title: string | null;
+  para: string[] | null;
+  id: string | null;
+  created_at: string | null;
+  author: string | null;
+  article_img: string | null;
+}
 
 
 
