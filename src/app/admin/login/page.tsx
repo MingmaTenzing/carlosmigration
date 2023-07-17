@@ -1,11 +1,11 @@
 "use client";
-import { supabase } from "@/app/page";
 import { Metadata } from "next";
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
+import { supabase } from "../../../../components/supabase/supabaseclient";
 
 type Props = {};
-function login({}: Props) {
+function Login({}: Props) {
   const router = useRouter();
   const [userEmail, setUserEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
@@ -58,4 +58,4 @@ function login({}: Props) {
     
   );
 }
-export default login;
+export default Login;

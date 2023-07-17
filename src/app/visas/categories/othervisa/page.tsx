@@ -20,15 +20,15 @@ function otherVisa({}) {
           className=" w-[750px] lg:w-full h-[420px] object-cover object-center"
         />
         <h1 className=" font-bold text-2xl md:text-3xl lg:text-4xl mt-5">
-          Unlocking Australia's Visa Wonderland: Your Comprehensive Guide to
+          Unlocking Australia&apos;s Visa Wonderland: Your Comprehensive Guide to
           Tourist, Bridging, and Working Holiday Visas
         </h1>
         <p>
-          Welcome to our ultimate guide on Australia's tourist, bridging, and
-          working holiday visas. Whether you're planning a trip, transitioning
-          between visas, or seeking work and adventure, we've got you covered.
+          Welcome to our ultimate guide on Australia&apos;s tourist, bridging, and
+          working holiday visas. Whether you&apos;re planning a trip, transitioning
+          between visas, or seeking work and adventure, we&apos;ve got you covered.
           Get ready to unlock the full information you need for a seamless and
-          unforgettable Australian experience. Let's dive in!
+          unforgettable Australian experience. Let&apos;s dive in!
         </p>
 
         <h2 className=" font-bold text-xl md:text-2xl ">Working Holiday</h2>
@@ -36,7 +36,7 @@ function otherVisa({}) {
           Are you ready to embark on an exciting adventure in Australia while
           gaining valuable work experience? Look no further than the 417 and 462
           visas, also known as Working Holiday visas. In this motivating guide,
-          we'll explore the overview, eligibility, conditions, requirements, and
+          we&apos;ll explore the overview, eligibility, conditions, requirements, and
           steps to apply for these visas. And remember, Carlos from Golden
           Ticket Migration is here to be your trusted guide on this
           unforgettable journey!
@@ -46,7 +46,7 @@ function otherVisa({}) {
           The 417 and 462 visas offer young individuals the opportunity to live,
           work, and explore Australia for a limited period. These visas are
           designed to promote cultural exchange and provide a taste of the
-          Australian way of life. So let's dive into the details and discover
+          Australian way of life. So let&apos;s dive into the details and discover
           how these visas can unlock incredible experiences!
         </p>
         <h3 className=" font-semibold text-lg md:text-xl ">Eligibility</h3>
@@ -65,7 +65,7 @@ function otherVisa({}) {
           you must abide by. These include working for a maximum period with
           each employer, engaging in temporary and casual employment rather than
           permanent positions, and adhering to Australian laws and regulations.
-          It's important to understand and respect these conditions to make the
+          It&apos;s important to understand and respect these conditions to make the
           most of your working holiday experience.
         </p>
         <h3 className=" font-semibold text-lg md:text-xl ">Requirements</h3>
@@ -100,7 +100,7 @@ function otherVisa({}) {
             1. Consult Carlos at Golden Ticket Migration: Carlos is your trusted
             migration expert who will provide personalized guidance, assess your
             eligibility, and assist you throughout the application process.
-            Don't miss the chance to have his expertise on your side!
+            Don&apos;t miss the chance to have his expertise on your side!
           </li>
           <li>
             2. Check eligibility: Confirm that you meet the age requirements,
@@ -115,7 +115,7 @@ function otherVisa({}) {
           </li>
           <li>
             4. Complete the online application: Visit the official Australian
-            Government's Department of Home Affairs website and fill out the
+            Government&apos;s Department of Home Affairs website and fill out the
             Working Holiday visa application form accurately. Double-check all
             the information before submitting.
           </li>
@@ -124,7 +124,7 @@ function otherVisa({}) {
             fee, which can be paid online using various payment methods.
           </li>
           <li>
-            6. Submit your application: Once you've completed the form and paid
+            6. Submit your application: Once you&apos;ve completed the form and paid
             the fee, submit your application online. Keep a copy of the receipt
             and any other relevant documents for your records.
           </li>
@@ -133,7 +133,7 @@ function otherVisa({}) {
         <h3 className=" font-semibold text-lg md:text-xl "> Conclusion</h3>
 
         <p>
-          Don't let the opportunity for an incredible working holiday in
+          Don&apos;t let the opportunity for an incredible working holiday in
           Australia pass you by. Take action today and unlock a world of
           adventure, cultural exchange, and personal growth. Trust Carlos and
           Golden Ticket Migration to be your guiding light on this
@@ -153,7 +153,7 @@ function otherVisa({}) {
           Visas (A, B, C, D, E, F, and G) available in Australia. Carlos, along
           with the expertise of Golden Ticket Migration, is here to guide you
           through the overview, eligibility, conditions, requirements, and steps
-          to apply for these bridging visas. Let's explore the possibilities and
+          to apply for these bridging visas. Let&apos;s explore the possibilities and
           take a step closer to achieving your dreams!
         </p>
         <h3 className=" font-semibold text-lg md:text-xl ">Overview</h3>
@@ -167,7 +167,7 @@ function otherVisa({}) {
         <h3 className=" font-semibold text-lg md:text-xl ">Eligibility</h3>
         <p>
           Eligibility for a Bridging Visa depends on your current immigration
-          status and the circumstances surrounding your application. It's
+          status and the circumstances surrounding your application. It&apos;s
           important to consult with Carlos and Golden Ticket Migration to assess
           your specific situation and determine the appropriate Bridging Visa
           for you.
@@ -176,7 +176,7 @@ function otherVisa({}) {
         <p>
           The conditions attached to Bridging Visas may vary, but they generally
           allow you to remain lawfully in Australia until a decision is made on
-          your substantive visa application. It's crucial to adhere to any
+          your substantive visa application. It&apos;s crucial to adhere to any
           conditions specified to maintain your lawful status.
         </p>
         <h3 className=" font-semibold text-lg md:text-xl ">Requirements</h3>
@@ -200,7 +200,7 @@ function otherVisa({}) {
             Bridging Visa for your needs.
           </li>
           <li>
-            3. Prepare the application: With Carlos's assistance, compile the
+            3. Prepare the application: With Carlos&apos;s assistance, compile the
             required documents, such as identification, evidence of your current
             visa application or immigration matter, and any supporting
             documentation.
@@ -231,7 +231,7 @@ function otherVisa({}) {
         <p>
           Are you ready to chase your dreams and explore the wonders of
           Australia? From its stunning landscapes to its rich cultural heritage,
-          Australia has something for everyone. If you're eager to embark on an
+          Australia has something for everyone. If you&apos;re eager to embark on an
           adventure filled with personal growth and unforgettable experiences,
           the Australian 600 visa might just be the pathway to turning your
           dreams into reality!
@@ -241,7 +241,7 @@ function otherVisa({}) {
           The Australian 600 visa, also known as the Visitor visa, is your
           gateway to experiencing the beauty and diversity of Australia. It
           allows individuals to visit the country for tourism, leisure, or
-          business purposes. Whether you're seeking a memorable vacation or
+          business purposes. Whether you&apos;re seeking a memorable vacation or
           exploring potential business opportunities, this visa paves the way
           for an incredible journey.
         </p>
@@ -249,7 +249,7 @@ function otherVisa({}) {
         <p>
           {" "}
           The 600 visa is designed for individuals who wish to explore
-          Australia's treasures temporarily. To be eligible, you need to meet
+          Australia&apos;s treasures temporarily. To be eligible, you need to meet
           certain criteria, including:
         </p>
         <p>
@@ -277,7 +277,7 @@ function otherVisa({}) {
           Conditions and Requirements:
         </h3>
         <p>
-          Once you've obtained the 600 visa, it's important to familiarize
+          Once you&apos;ve obtained the 600 visa, it&apos;s important to familiarize
           yourself with the conditions and requirements that come with it:
         </p>
         <p>
@@ -287,7 +287,7 @@ function otherVisa({}) {
         </p>
         <p>
           Multiple entries: The 600 visa often permits multiple entries, which
-          means you can leave and re-enter Australia within the visa's validity
+          means you can leave and re-enter Australia within the visa&apos;s validity
           period.
         </p>
         <p>
@@ -298,8 +298,8 @@ function otherVisa({}) {
         </p>
         <h3 className=" font-semibold text-lg md:text-xl "> Steps To Apply </h3>
         <p>
-          Now that you're motivated to make your Australian dreams come true,
-          let's explore the steps to apply for the 600 visa:
+          Now that you&apos;re motivated to make your Australian dreams come true,
+          let&apos;s explore the steps to apply for the 600 visa:
         </p>
         <ol type="1" className=" list-decimal space-y-3">
           <li>
@@ -311,7 +311,7 @@ function otherVisa({}) {
           <li>
             Understand the visa options: Carlos will help you navigate the
             different streams available under the 600 visa and identify the one
-            that suits your purpose of visit, whether it's tourism, visiting
+            that suits your purpose of visit, whether it&apos;s tourism, visiting
             family, or engaging in business activities.
           </li>
           <li>
@@ -335,15 +335,15 @@ function otherVisa({}) {
         <h3 className=" font-semibold text-lg md:text-xl "> Conclusion </h3>
         <p>
           The Australian 600 visa opens the door to a world of exploration and
-          incredible experiences. It's time to embark on your dream journey, and
+          incredible experiences. It&apos;s time to embark on your dream journey, and
           Carlos from Golden Ticket Migration is here to guide you through every
           step of the process.
         </p>
         <p>
-          Don't let anything hold you back! Contact Carlos at Golden Ticket
+          Don&apos;t let anything hold you back! Contact Carlos at Golden Ticket
           Migration today and let him help you navigate the visa application
           process with ease. Your adventure in Australia awaits, and with Carlos
-          by your side, you'll have the golden ticket to unlock a world of
+          by your side, you&apos;ll have the golden ticket to unlock a world of
           possibilities.
         </p>
       </div>

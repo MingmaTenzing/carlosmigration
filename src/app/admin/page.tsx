@@ -2,15 +2,15 @@
 
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 
-import { supabase } from "../page";
 import { SyncLoader } from "react-spinners";
 import { CheckIcon } from "@heroicons/react/24/outline";
+import { supabase } from "../../../components/supabase/supabaseclient";
 
 type Props = {};
-function admin({}: Props) {
+function Admin({}: Props) {
   const [authorName, setAuthorName] = useState<string>("");
-  
-  const [articleSubtitle, setArticleSubtitle] = useState<string>()
+
+  const [articleSubtitle, setArticleSubtitle] = useState<string>();
   const [isArticlePublishing, setIsArticlePublishing] =
     useState<boolean>(false);
   const [authorProfileImg, setauthorProfileImg] = useState<string>(
@@ -103,7 +103,7 @@ function admin({}: Props) {
   return (
     <div className=" lg:w-[1200px] m-auto p-4 py-20">
       <div className=" font-bold  text-2xl  uppercase ">
-        It's time to add articles
+        It&apos;s time to add articles
       </div>
 
       <form className=" my-6" onSubmit={uploadImg}>
@@ -236,4 +236,4 @@ function admin({}: Props) {
     </div>
   );
 }
-export default admin;
+export default Admin;

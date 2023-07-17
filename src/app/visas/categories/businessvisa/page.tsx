@@ -28,14 +28,14 @@ function businessVisa({}: Props) {
         </h1>
         <p>
           The subclass 188 visa is a temporary visa that allows you to invest in
-          and live in Australia for four years. It's part of the Business
+          and live in Australia for four years. It&apos;s part of the Business
           Innovation and Investment Program, which is all about encouraging
           business-minded individuals like you to bring their talents and ideas
           to Australia.
         </p>
 
         <p>
-          Now, let's talk about the different streams within this visa program:
+          Now, let&apos;s talk about the different streams within this visa program:
         </p>
         <h2 className=" font-semibold text-xl md:text-2xl ">
           Business Innovation Stream
@@ -44,12 +44,12 @@ function businessVisa({}: Props) {
           This is for people with business skills who want to establish,
           develop, or manage a new or existing business in Australia. To be
           eligible, you need to achieve at least 65 points and be nominated by a
-          state or territory government. It's important to be under 55 years old
+          state or territory government. It&apos;s important to be under 55 years old
           and meet specific business turnover and net assets requirements.
         </p>
         <h2 className=" font-semibold text-xl md:text-2xl ">Investor Stream</h2>
         <p>
-          If you're interested in making a designated investment of at least
+          If you&apos;re interested in making a designated investment of at least
           AUD1.5 million in an Australian state or territory and maintaining
           business and investment activity there, this stream is for you.
           Similar to the Business Innovation stream, you need to achieve at
@@ -63,7 +63,7 @@ function businessVisa({}: Props) {
           Are you willing to invest at least AUD5 million into complying
           significant investments in Australia? This stream is designed for you.
           You can be nominated by a state or territory government or Austrade on
-          behalf of the Australian government. This stream doesn't require
+          behalf of the Australian government. This stream doesn&apos;t require
           points, but you need to invest in complying investment funds before
           your visa is granted.
         </p>
@@ -71,7 +71,7 @@ function businessVisa({}: Props) {
           Premium Investor Stream
         </h2>
         <p>
-          If you're ready to take it up a notch and invest at least AUD15
+          If you&apos;re ready to take it up a notch and invest at least AUD15
           million into complying premium investments in Australia, this stream
           is your golden opportunity. Austrade will reach out to suitable
           candidates on behalf of the Australian government for nomination.
@@ -96,20 +96,20 @@ function businessVisa({}: Props) {
           Are you an aspiring entrepreneur with a funding agreement of at least
           AUD200,000 from a third party? This stream is for those who have big
           ideas and want to develop a business or commercialize a product or
-          service in Australia. You'll need to be nominated by a state or
+          service in Australia. You&apos;ll need to be nominated by a state or
           territory government.
         </p>
 
         <p>
-          Now, let's talk about the steps to apply for this visa. First, you
+          Now, let&apos;s talk about the steps to apply for this visa. First, you
           must submit an Expression of Interest (EOI) through SkillSelect. Then,
           you need to be nominated by an eligible government organization. Once
           you receive an invitation, you can proceed with your visa application.
         </p>
         <p>
           Remember, this is not just about starting a business in Australia;
-          it's about embarking on a life-changing journey. And here's where
-          Carlos comes in. He's your guide and mentor throughout this incredible
+          it&apos;s about embarking on a life-changing journey. And here&apos;s where
+          Carlos comes in. He&apos;s your guide and mentor throughout this incredible
           process. Carlos will be there to support you, answer your questions,
           and help you navigate any challenges that may come your way. Think of
           him as your personal cheerleader, rooting for your success.
@@ -118,8 +118,8 @@ function businessVisa({}: Props) {
           So, what are you waiting for? Take action now! Reach out to Carlos and
           let the adventure begin. Your golden ticket to Australia and a world
           of possibilities awaits. Believe in yourself, embrace the unknown, and
-          make that call to Carlos today. It's time to unlock your potential and
-          create the life you've always dreamed of.
+          make that call to Carlos today. It&apos;s time to unlock your potential and
+          create the life you&apos;ve always dreamed of.
         </p>
         <p>
           Remember, the only way to make your dreams a reality is by taking that
