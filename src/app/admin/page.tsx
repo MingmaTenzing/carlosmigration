@@ -9,6 +9,10 @@ import { CheckIcon } from "@heroicons/react/24/outline";
 type Props = {};
 function admin({}: Props) {
   const [authorName, setAuthorName] = useState<string>("");
+  const [isArticlePublishing, setIsArticlePublishing] =
+    useState<boolean>(false);
+    const [authorProfileImg, setauthorProfileImg] = useState<string>("https://byeilculfqugwxetgrkj.supabase.co/storage/v1/object/public/article%20images/authors/Carlos%20Castro%20Profile.jpg?t=2023-07-17T01%3A58%3A45.536Z");
+  const [articlePublished, setArticlePublished] = useState<boolean>(false);
   const [article_title, setArticleTitle] = useState<string>("");
   const [articleParas, setArticleParas] = useState<string[]>([]);
   const [articleImg, setArticleImg] = useState<File>();
@@ -24,7 +28,9 @@ function admin({}: Props) {
   {
     /** ARTICLE ADDING FUNCTION */
   }
-  async function addArticle() {
+  async function addArticle(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setIsArticlePublishing(true);
     const { data, error } = await supabase
       .from("Blogs")
       .insert([
@@ -34,11 +40,13 @@ function admin({}: Props) {
           created_at: new Date().toISOString(),
           para: articleParas,
           article_img: imageURL,
+          author_img:  authorProfileImg
         },
       ])
       .select();
     if (data) {
-      console.log(data);
+      setIsArticlePublishing(false);
+      setArticlePublished(true);
     }
     if (error) {
       console.log(error);
@@ -80,6 +88,9 @@ function admin({}: Props) {
   }
 
   function addParagraph() {
+    if (paragraph === "") {
+      return window.alert("Please add a paragraph first!.");
+    }
     articleParas.push(paragraph);
     setParagraph("");
   }
@@ -139,13 +150,13 @@ function admin({}: Props) {
           <p className=" text-lg font-semibold">Paragraphs</p>
 
           <textarea
-            className=" border outline-none w-full h-[200px]"
             value={paragraph}
+            className=" border outline-none w-full h-[200px]"
             onChange={(e) => setParagraph(e.target.value)}
           />
           <div
             onClick={addParagraph}
-            className=" font-semibold w-[200px] text-white bg-orange p-4"
+            className=" cursor-pointer hover:bg-black  transition-all  ease-linear duration-100 font-semibold w-[200px] text-white bg-orange p-4"
           >
             Add Paragraph
           </div>
@@ -161,25 +172,39 @@ function admin({}: Props) {
             className=" border outline-none p-4 w-full"
           />
         </div>
+        <div className=" space-y-2">
+          <p className=" text-lg font-semibold">Author Profile Image URL </p>
+          <p className=" text-sm text-red-500">This link is a default author profile image. Only change the link if the author is different or you want to change the picture. </p>
+          <input
+            type="text"
+            required
+            defaultValue={authorProfileImg}
+            onChange={(e) => setauthorProfileImg(e.target.value)}
+            placeholder="e.g: BEST COURSES FOR INTERNATIONAL STUDENTS"
+            className=" border outline-none p-4 w-full"
+          />
+        </div>
 
         <div className=" space-y-2">
           <p className=" text-lg font-semibold">Article Image URL</p>
           <input
             type="text"
-            disabled
             required
             value={imageURL}
             placeholder="Upload the image and it will fill up automatically"
             className=" border outline-none p-4 w-full"
           />
         </div>
-
-        <button
-          type="submit"
-          className=" p-4 bg-orange text-white font-semibold"
-        >
-          PUBLISH ARTICLE !!
-        </button>
+        <div className=" flex space-x-2 items-center">
+          <button
+            type="submit"
+            className=" hover:bg-black transition-all ease-linear duration-100 p-4 bg-orange text-white font-semibold"
+          >
+            PUBLISH ARTICLE !!
+          </button>
+          {isArticlePublishing && <SyncLoader color="#36d7b7" />}
+          {articlePublished && <CheckIcon className=" text-green-500 w-10" />}
+        </div>
       </form>
 
       <h2 className=" my-10 text-2xl md:text-3xl lg:text-4xl font-bold">

@@ -13,6 +13,7 @@ export interface Database {
         Row: {
           article_img: string | null
           author: string | null
+          author_img: string | null
           created_at: string | null
           id: string
           para: string[] | null
@@ -21,6 +22,7 @@ export interface Database {
         Insert: {
           article_img?: string | null
           author?: string | null
+          author_img?: string | null
           created_at?: string | null
           id?: string
           para?: string[] | null
@@ -29,6 +31,7 @@ export interface Database {
         Update: {
           article_img?: string | null
           author?: string | null
+          author_img?: string | null
           created_at?: string | null
           id?: string
           para?: string[] | null
