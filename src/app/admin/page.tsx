@@ -9,9 +9,13 @@ import { CheckIcon } from "@heroicons/react/24/outline";
 type Props = {};
 function admin({}: Props) {
   const [authorName, setAuthorName] = useState<string>("");
+  
+  const [articleSubtitle, setArticleSubtitle] = useState<string>()
   const [isArticlePublishing, setIsArticlePublishing] =
     useState<boolean>(false);
-    const [authorProfileImg, setauthorProfileImg] = useState<string>("https://byeilculfqugwxetgrkj.supabase.co/storage/v1/object/public/article%20images/authors/Carlos%20Castro%20Profile.jpg?t=2023-07-17T01%3A58%3A45.536Z");
+  const [authorProfileImg, setauthorProfileImg] = useState<string>(
+    "https://byeilculfqugwxetgrkj.supabase.co/storage/v1/object/public/article%20images/authors/Carlos%20Castro%20Profile.jpg?t=2023-07-17T01%3A58%3A45.536Z"
+  );
   const [articlePublished, setArticlePublished] = useState<boolean>(false);
   const [article_title, setArticleTitle] = useState<string>("");
   const [articleParas, setArticleParas] = useState<string[]>([]);
@@ -36,11 +40,12 @@ function admin({}: Props) {
       .insert([
         {
           title: article_title,
+          subtitle: articleSubtitle,
           author: authorName,
           created_at: new Date().toISOString(),
           para: articleParas,
           article_img: imageURL,
-          author_img:  authorProfileImg
+          author_img: authorProfileImg,
         },
       ])
       .select();
@@ -145,6 +150,16 @@ function admin({}: Props) {
             className=" border outline-none p-4 w-full"
           />
         </div>
+        <div className=" space-y-2">
+          <p className=" text-lg font-semibold">Subtitle of Article</p>
+          <input
+            required
+            type="text"
+            onChange={(event) => setArticleSubtitle(event.target.value)}
+            placeholder="e.g: The right course can lead to a brighter future"
+            className=" border outline-none p-4 w-full"
+          />
+        </div>
         {/** PARAGRAPHS OF ARTICLE */}
         <div>
           <p className=" text-lg font-semibold">Paragraphs</p>
@@ -174,7 +189,10 @@ function admin({}: Props) {
         </div>
         <div className=" space-y-2">
           <p className=" text-lg font-semibold">Author Profile Image URL </p>
-          <p className=" text-sm text-red-500">This link is a default author profile image. Only change the link if the author is different or you want to change the picture. </p>
+          <p className=" text-sm text-red-500">
+            This link is a default author profile image. Only change the link if
+            the author is different or you want to change the picture.{" "}
+          </p>
           <input
             type="text"
             required

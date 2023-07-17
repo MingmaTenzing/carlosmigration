@@ -17,6 +17,7 @@ export interface Database {
           created_at: string | null
           id: string
           para: string[] | null
+          subtitle: string | null
           title: string | null
         }
         Insert: {
@@ -26,6 +27,7 @@ export interface Database {
           created_at?: string | null
           id?: string
           para?: string[] | null
+          subtitle?: string | null
           title?: string | null
         }
         Update: {
@@ -35,6 +37,7 @@ export interface Database {
           created_at?: string | null
           id?: string
           para?: string[] | null
+          subtitle?: string | null
           title?: string | null
         }
         Relationships: []
