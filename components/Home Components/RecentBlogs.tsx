@@ -15,13 +15,13 @@ function RecentBlogs({}: Props) {
       <div className=" flex flex-col  items-center md:flex-row md:justify-center md:flex-wrap">
         {/** OFFERING  */}
         <div className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
-          <div className=" relative w-full h-[45%]">
+          <div className=" relative w-full overflow-hidden h-[45%]">
             <Image
               src={studentVisa}
               width={340}
               height={250}
               alt="Services Image"
-              className=" h-full w-full  object-cover"
+              className=" h-full w-full group-hover:scale-110  transition-all ease-linear duration-150  object-cover"
             />
             <span className=" bg-[#201c2c] h-full w-full absolute  top-0 left-0 opacity-0 group-hover:opacity-60 transition-all ease-linear duration-300 "></span>
           </div>

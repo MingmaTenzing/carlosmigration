@@ -42,7 +42,7 @@ function Nav({}: Props) {
               Contact
             </Link>
             <Link
-              href="/"
+              href="/blog"
               className=" text-gray-500 hover:text-black transition-all ease-linear duration-150"
             >
               Blog
