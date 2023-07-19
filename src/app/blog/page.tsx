@@ -44,7 +44,7 @@ function Blog({}: Props) {
         subTitle="All the immigration news and information in one place"
       />
 
-      <div className=" flex flex-wrap lg:w-[1200px]">
+      <div className=" flex m-auto  flex-wrap mt-10  justify-center">
         {
           Articles?.map((article) => <Blogcard author={article.author} key={article.id} article_img={article.article_img} title={article.title} para={null} id={null} created_at={article.created_at} subtitle={null}   />)
         }

@@ -19,7 +19,7 @@ function Visas({}: Props) {
     <div>
         <HeroBackground title="Visa Services" subTitle="Get the best services across all visa categories" bg={bg} />
 
-      <div id="VISA SERVICES CONTAINER" className=" mt-10 flex md:justify-center md:flex-row md:flex-wrap flex-col items-center">
+      <div id="VISA SERVICES CONTAINER" className=" mt-10 flex md:justify-center lg:w-[1200px] m-auto md:flex-row md:flex-wrap flex-col items-center">
             {/** OFFERING  */}
             <div onClick={() => router.push("/visas/categories/studentvisa")} className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
           <div className=" relative w-full h-[45%]">
