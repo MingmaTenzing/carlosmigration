@@ -10,11 +10,11 @@ import business from "../../../assests/Business.jpg"
 import tourist from "../../../assests/tourist.jpg"
 import { ChevronRightIcon } from "@heroicons/react/24/outline"
 import HeroBackground from "../../../utilities/HeroBackground"
-
+import { useAppSelector } from "../../../redux/hooks"
 
 type Props = {}
 function Visas({}: Props) {
-    const router = useRouter();
+ const router = useRouter();
   return (
     <div>
         <HeroBackground title="Visa Services" subTitle="Get the best services across all visa categories" bg={bg} />

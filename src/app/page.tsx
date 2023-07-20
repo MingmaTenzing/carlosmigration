@@ -5,11 +5,17 @@ import Clients from "../../components/Home Components/Clients";
 import Reviews from "../../components/Home Components/Reviews";
 import RecentBlogs from "../../components/Home Components/RecentBlogs";
 import HeroServices from "../../components/Home Components/HeroServices";
+import { Metadata } from "next";
 
 
+export const metadata: Metadata = {
+  title: "Carlos Castro Migration",
+  description: " Carlos Castro Migration and Education Services",
 
+}
 
 export default function Home() {
+
   return (
     <div>
       <Hero />

@@ -5,6 +5,9 @@ import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { SyncLoader } from "react-spinners";
 import { CheckIcon } from "@heroicons/react/24/outline";
 import { supabase } from "../../../components/supabase/supabaseclient";
+import { useRouter } from "next/navigation";
+import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
+import { singOutUser } from "../../../redux/userSlice";
 
 type Props = {};
 function Admin({}: Props) {
@@ -26,8 +29,17 @@ function Admin({}: Props) {
     useState<boolean>(false);
   const [imageURL, setImageURL] = useState<string>("");
   const [paragraph, setParagraph] = useState<string>("");
-  console.log(imgTitle, article_title, authorName, articleImg);
-  console.log(articleParas);
+  const user = useAppSelector((state) => state.value);
+
+  const router = useRouter();
+
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    if (user.email === "" && user.id === "") {
+      return router.push("/login");
+    }
+  }, [user]);
 
   {
     /** ARTICLE ADDING FUNCTION */
@@ -102,10 +114,14 @@ function Admin({}: Props) {
 
   return (
     <div className=" lg:w-[1200px] m-auto p-4 py-20">
-      <div className=" font-bold  text-2xl  uppercase ">
-        It&apos;s time to add articles
+      <div className=" flex  justify-between items-center">
+        <div className=" font-bold  text-2xl  uppercase ">
+          It&apos;s time to add articles
+        </div>
+        <button onClick={() => dispatch(singOutUser())} className="  font-semibold p-4 bg-orange hover:bg-black text-white">
+          Sign Out
+        </button>
       </div>
-
       <form className=" my-6" onSubmit={uploadImg}>
         <div className=" mt-10 space-y-2">
           <div>
@@ -165,7 +181,6 @@ function Admin({}: Props) {
           <p className=" text-lg font-semibold">Paragraphs</p>
 
           <textarea
-            value={paragraph}
             className=" border outline-none w-full h-[200px]"
             onChange={(e) => setParagraph(e.target.value)}
           />
@@ -208,7 +223,7 @@ function Admin({}: Props) {
           <input
             type="text"
             required
-            value={imageURL}
+            aria-placeholder={imageURL}
             placeholder="Upload the image and it will fill up automatically"
             className=" border outline-none p-4 w-full"
           />
