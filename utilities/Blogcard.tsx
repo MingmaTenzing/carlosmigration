@@ -1,14 +1,15 @@
 import { Blog } from "@/app/blog/page";
 import { create } from "domain";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 type Props = {};
-function Blogcard({ title, article_img, created_at, author }: Blog) {
+function Blogcard({ id,title, article_img, created_at, author }: Blog) {
   const date = new Date(created_at!)
  const fromattedDAted = date.toLocaleDateString('en-US', { year:'numeric', month:"long",day:'2-digit'})
-  
+  const router = useRouter();
   return (
-    <div>
+    <div onClick={() => router.push(`/blog/${id}`)}>
       <div className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200  m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
         <div className=" relative w-full overflow-hidden h-[45%]">
           <Image

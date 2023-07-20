@@ -46,7 +46,7 @@ function Blog({}: Props) {
 
       <div className=" flex m-auto  flex-wrap mt-10  justify-center">
         {
-          Articles?.map((article) => <Blogcard author={article.author} key={article.id} article_img={article.article_img} title={article.title} para={null} id={null} created_at={article.created_at} subtitle={null}   />)
+          Articles?.map((article) => <Blogcard author={article.author} key={article.id} id={article.id} article_img={article.article_img} title={article.title} para={null}  created_at={article.created_at} subtitle={null}   />)
         }
       </div>
     </div>
