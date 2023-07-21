@@ -9,8 +9,8 @@ function Blogcard({ id,title, article_img, created_at, para, author }: Blog) {
  const fromattedDAted = date.toLocaleDateString('en-US', { year:'numeric', month:"long",day:'2-digit'})
   const router = useRouter();
   return (
-    <div onClick={() => router.push(`/blog/${id}`)}>
-      <div className="    hover:border-[#282C35]  bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200  m-1 relative group overflow-hidden md:max-w-[240px]  lg:max-w-[270px] border ">
+    <div onClick={() => router.push(`/blog/${title}/${id}`)}>
+      <div className="    hover:border-[#282C35]  bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200  m-1 relative group overflow-hidden md:max-w-[240px] m-aut lg:max-w-[270px] border ">
         <div className=" relative w-full overflow-hidden h-[45%]">
           <Image
             src={article_img!}

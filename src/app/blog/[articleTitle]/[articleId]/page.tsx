@@ -2,7 +2,7 @@
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { supabase } from "../../../../components/supabase/supabaseclient";
+import { supabase } from "../../../../../components/supabase/supabaseclient";
 
 interface article {
   article_img: string | null;
@@ -24,7 +24,7 @@ async function getArticle(route: string) {
 }
 
 function BlogPost() {
-  const route = useParams().articleId;
+  const route:string = useParams().articleId;
 
   const [post, setPost] = useState<article>();
   const date = new Date(post?.created_at!);
