@@ -181,6 +181,7 @@ function Admin({}: Props) {
           <p className=" text-lg font-semibold">Paragraphs</p>
 
           <textarea
+          value={paragraph}
             className=" border outline-none w-full h-[200px]"
             onChange={(e) => setParagraph(e.target.value)}
           />
@@ -223,7 +224,7 @@ function Admin({}: Props) {
           <input
             type="text"
             required
-            aria-placeholder={imageURL}
+            value={imageURL}
             placeholder="Upload the image and it will fill up automatically"
             className=" border outline-none p-4 w-full"
           />
