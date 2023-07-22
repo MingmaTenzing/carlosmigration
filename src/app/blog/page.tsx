@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import HeroBackground from "../../../utilities/HeroBackground";
 import img from "../../../assests/blogbg.jpg";
 import { useEffect, useState } from "react";
@@ -24,30 +24,32 @@ function Blog({}: Props) {
     async function getArticles() {
       const { data: Blogs, error } = await supabase.from("Blogs").select("*");
       if (Blogs) {
+        
         setArticles(Blogs);
-       
       }
       if (error) {
         console.log(error);
       }
-
     }
-    
+
     getArticles();
+
   }, []);
-  console.log(Articles)
   return (
     <div>
-      <HeroBackground
-        bg={img}
-        title="Blog"
-        subTitle="All the immigration news and information in one place"
-      />
-
-      <div className=" flex m-auto  flex-wrap mt-10  justify-center">
-        {
-          Articles?.map((article) => <Blogcard author={article.author} key={article.id} article_img={article.article_img} title={article.title} para={null} id={null} created_at={article.created_at} subtitle={null}   />)
-        }
+      <div className="     w-[100%] justify-center p-4 lg:p-6 flex  m-auto   flex-wrap ">
+        {Articles?.map((article) => (
+          <Blogcard
+            author={article.author}
+            key={article.id}
+            id={article.id}
+            article_img={article.article_img}
+            title={article.title}
+            para={article.para}
+            created_at={article.created_at}
+            subtitle={null}
+          />
+        ))}
       </div>
     </div>
   );
