@@ -65,7 +65,7 @@ function BlogPost() {
           <h2 className="  italic font-light">{post?.subtitle}</h2>
 
         </div>
-        <div className=" flex jus items-center  justify-between  ">
+        <div className=" md:flex  items-center  justify-between  ">
       <div className=" flex  space-x-2 items-center">
 
         <Image src={post?.author_img!} alt={post?.author!} width={200} height={200} className="  w-[50px] h-[50px] rounded-full object-center object-cover" />

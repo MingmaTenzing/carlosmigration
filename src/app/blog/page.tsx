@@ -24,11 +24,7 @@ function Blog({}: Props) {
     async function getArticles() {
       const { data: Blogs, error } = await supabase.from("Blogs").select("*");
       if (Blogs) {
-         const sortedArticles = Blogs.sort(
-        (a, b) =>
-          new Date(b.created_at!).getTime() - new Date(a.created_at!).getTime()
-      );
-      console.log(sortedArticles)
+        
         setArticles(Blogs);
       }
       if (error) {
@@ -41,7 +37,7 @@ function Blog({}: Props) {
   }, []);
   return (
     <div>
-      <div className=" overflow-auto    w-full flex  m-auto p-4 flex-wrap ">
+      <div className="     w-[100%] justify-center p-4 lg:p-6 flex  m-auto   flex-wrap ">
         {Articles?.map((article) => (
           <Blogcard
             author={article.author}

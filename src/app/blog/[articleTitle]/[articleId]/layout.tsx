@@ -8,13 +8,7 @@ type Props = {
   params: { articleTitle: string; articleID: string };
 };
 
-async function getArticle({ params }: Props) {
-  const { data, error } = await supabase
-    .from("Blogs")
-    .select("*")
-    .eq("id", params.articleID);
-  return data;
-}
+
 
 export async function generateMetadata({params}: Props) {
 
