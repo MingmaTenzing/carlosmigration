@@ -3,6 +3,8 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { supabase } from "../../../../../components/supabase/supabaseclient";
+import VisaNavigation from "../../../../../utilities/VisaNavigation";
+import RecentBlogs from "../../../../../utilities/RecentBlogs";
 
 interface article {
   article_img: string | null;
@@ -24,7 +26,7 @@ async function getArticle(route: string) {
 }
 
 function BlogPost() {
-  const route:string = useParams().articleId;
+  const route: string = useParams().articleId;
 
   const [post, setPost] = useState<article>();
   const date = new Date(post?.created_at!);
@@ -45,9 +47,9 @@ function BlogPost() {
   }, []);
 
   return (
-    <div className=" p-4">
+    <div className="lg:flex lg:w-[1200px] m-auto lg:space-x-10 p-4">
       {/** ARTICLE section */}
-      <div className=" space-y-6 md:w-[80%] lg:w-[800px] m-auto">
+      <div className=" space-y-6 md:w-[80%] md:m-auto lg:m-0  ">
         <Image
           src={post?.article_img!}
           alt={post?.title!}
@@ -56,30 +58,40 @@ function BlogPost() {
           className=" max-h-[500px] object-cover object-center rounded-lg"
         />
 
-        
         <div className=" space-y-3">
           <h1 className="  font-bold text-2xl md:text-3xl lg:text-4xl">
             {post?.title}
           </h1>
-         
+
           <h2 className="  italic font-light">{post?.subtitle}</h2>
-
         </div>
-        <div className=" md:flex  items-center  justify-between  ">
-      <div className=" flex  space-x-2 items-center">
+        <div className=" flex  items-center  justify-between  ">
+          <div className=" flex  space-x-2 items-center">
+            <Image
+              src={post?.author_img!}
+              alt={post?.author!}
+              width={200}
+              height={200}
+              className="  w-[50px] h-[50px] rounded-full object-center object-cover"
+            />
 
-        <Image src={post?.author_img!} alt={post?.author!} width={200} height={200} className="  w-[50px] h-[50px] rounded-full object-center object-cover" />
-         
-          <p> {post?.author}</p>
-      </div>
-          <p className=" -sm">{fromattedDAted}</p>
-
+            <p> {post?.author}</p>
+          </div>
+          <p className=" text-sm  text-gray-400 italic">{fromattedDAted}</p>
         </div>
 
         <div className=" space-y-5">
           {post?.para?.map((content, index) => (
             <p key={index}>{content} </p>
           ))}
+        </div>
+      </div>
+
+      {/*** SIDE BAR OPTIONS */}
+      <div className="  lg:w-[400px] lg:mt-0 mt-10 ">
+        <div className=" space-y-6">
+          <RecentBlogs articleToNotInclude={post?.id!} />
+          <VisaNavigation />
         </div>
       </div>
     </div>
