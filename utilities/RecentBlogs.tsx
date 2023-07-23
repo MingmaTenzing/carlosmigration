@@ -1,4 +1,5 @@
-import { useState } from "react";
+'use client'
+import { useEffect, useState } from "react";
 import { supabase } from "../components/supabase/supabaseclient";
 import { Blog } from "@/app/blog/page";
 import Image from "next/image";
@@ -11,16 +12,22 @@ type Props = {
 function RecentBlogs({ articleToNotInclude }: Props) {
   const [recentArticles, setRecentArticles] = useState<Blog[]>();
   const router = useRouter();
-  async function getRecentArticles() {
-    const { data: Blogs, error } = await supabase
-      .from("Blogs")
-      .select("*")
-      .neq("id", articleToNotInclude)
-      .range(0, 4);
-    setRecentArticles(Blogs!);
-  }
 
-  getRecentArticles();
+  useEffect(() => {
+
+    async function getRecentArticles() {
+      const { data: Blogs, error } = await supabase
+        .from("Blogs")
+        .select("*")
+        .neq("id", articleToNotInclude)
+        .range(0, 4);
+      setRecentArticles(Blogs!);
+     
+    }
+  
+    getRecentArticles();
+    
+  }, [articleToNotInclude])
 
   return (
     <div className=" bg-[#f1f0f7] p-8 border rounded-lg space-y-6 lg:w-[300px]">

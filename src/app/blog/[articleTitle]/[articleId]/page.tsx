@@ -3,8 +3,12 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { supabase } from "../../../../../components/supabase/supabaseclient";
+import { TikTokEmbed } from "react-social-media-embed";
+
 import VisaNavigation from "../../../../../utilities/VisaNavigation";
 import RecentBlogs from "../../../../../utilities/RecentBlogs";
+import { TwitterTimelineEmbed } from "react-twitter-embed";
+import { InstagramEmbed, YouTubeEmbed } from "react-social-media-embed";
 
 interface article {
   article_img: string | null;
@@ -15,6 +19,7 @@ interface article {
   para: string[] | null;
   subtitle: string | null;
   title: string | null;
+  youtube_url: string | null;
 }
 
 async function getArticle(route: string) {
@@ -36,8 +41,6 @@ function BlogPost() {
     day: "2-digit",
   });
 
-  console.log(post);
-
   useEffect(() => {
     async function fetchArticle() {
       const article = await getArticle(route);
@@ -47,9 +50,9 @@ function BlogPost() {
   }, []);
 
   return (
-    <div className="lg:flex lg:w-[1200px] m-auto lg:space-x-10 p-4">
+    <div className=" lg:flex lg:w-[1200px] m-auto lg:space-x-10  p-4">
       {/** ARTICLE section */}
-      <div className=" space-y-6 md:w-[80%] md:m-auto lg:m-0  ">
+      <div className=" space-y-6 md:w-[80%] m-auto lg:w-[750px]   ">
         <Image
           src={post?.article_img!}
           alt={post?.title!}
@@ -85,13 +88,36 @@ function BlogPost() {
             <p key={index}>{content} </p>
           ))}
         </div>
+        {post?.youtube_url && (
+          <div>
+            <div className=" md:hidden">
+              <YouTubeEmbed
+                height={300}
+                url={post.youtube_url}
+                width={320}
+              />
+            </div>
+            <div className=" hidden md:flex">
+              <YouTubeEmbed
+                height={450}
+                url={post.youtube_url}
+                width={650}
+              />
+            </div>
+          </div>
+        )}
       </div>
 
       {/*** SIDE BAR OPTIONS */}
-      <div className="  lg:w-[400px] lg:mt-0 mt-10 ">
-        <div className=" space-y-6">
-          <RecentBlogs articleToNotInclude={post?.id!} />
-          <VisaNavigation />
+      <div className=" mt-10 lg:mt-0 w-full lg:w-[300px] space-y-6">
+        <RecentBlogs articleToNotInclude={post?.id!} />
+        <VisaNavigation />
+        <div className=" ">
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName="CHARLIESHUN"
+            options={{ height: 600 }}
+          />
         </div>
       </div>
     </div>
