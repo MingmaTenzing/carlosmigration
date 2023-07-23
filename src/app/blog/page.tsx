@@ -19,13 +19,16 @@ export interface Blog {
 
 function Blog({}: Props) {
   const [Articles, setArticles] = useState<Blog[]>();
+  const [loading, setLoading] = useState<boolean>(false);
+  const loadingArray: number[] = new Array(20).fill(0);
 
   useEffect(() => {
+    setLoading(true);
     async function getArticles() {
       const { data: Blogs, error } = await supabase.from("Blogs").select("*");
       if (Blogs) {
-        
         setArticles(Blogs);
+        setLoading(false)
       }
       if (error) {
         console.log(error);
@@ -33,24 +36,43 @@ function Blog({}: Props) {
     }
 
     getArticles();
-
   }, []);
   return (
     <div>
-      <div className="     w-[100%] justify-center p-4 lg:p-6 flex  m-auto   flex-wrap ">
-        {Articles?.map((article) => (
-          <Blogcard
-            author={article.author}
-            key={article.id}
-            id={article.id}
-            article_img={article.article_img}
-            title={article.title}
-            para={article.para}
-            created_at={article.created_at}
-            subtitle={null}
-          />
-        ))}
-      </div>
+      {loading ? (
+        <div className="  w-[100%] justify-center p-4 lg:p-6 flex  m-auto   flex-wrap ">
+          {loadingArray.map((_, index) => (
+            <div
+              key={index}
+              className=" w-[240px] lg:w-[270px] h-[300px] m-1 border"
+            >
+              <div className=" h-1/2 bg-gray-400 animate-pulse"></div>
+              <div className=" animate-pulse">
+                <div className=" h-4 bg-gray-500 w-[90%]  mt-4" />
+                <div className=" h-3 bg-gray-500 w-[80%]  mt-4" />
+                <div className=" h-2 bg-gray-500 w-[70%]  mt-4" />
+                <div className=" h-2 bg-gray-500 w-[70%]  mt-4" />
+                <div className=" h-2 bg-gray-500 w-[70%]  mt-4" />
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="     w-[100%] justify-center p-4 lg:p-6 flex  m-auto   flex-wrap ">
+          {Articles?.map((article) => (
+            <Blogcard
+              author={article.author}
+              key={article.id}
+              id={article.id}
+              article_img={article.article_img}
+              title={article.title}
+              para={article.para}
+              created_at={article.created_at}
+              subtitle={null}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

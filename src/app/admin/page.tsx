@@ -27,6 +27,7 @@ function Admin({}: Props) {
   const [ImageUploading, setImageUploading] = useState<boolean>(false);
   const [isUploadingComplete, setIsUploadingComplete] =
     useState<boolean>(false);
+    const[ youtubeURL, setYoutubeURL] = useState<string | null>(null);
   const [imageURL, setImageURL] = useState<string>("");
   const [paragraph, setParagraph] = useState<string>("");
   const user = useAppSelector((state) => state.value);
@@ -58,6 +59,7 @@ function Admin({}: Props) {
           para: articleParas,
           article_img: imageURL,
           author_img: authorProfileImg,
+          youtube_url: youtubeURL
         },
       ])
       .select();
@@ -83,7 +85,6 @@ function Admin({}: Props) {
         upsert: false,
       });
     if (data?.path) {
-      console.log(data.path);
       setImageUploading(false);
       setIsUploadingComplete(true);
       setImageURL(
@@ -191,6 +192,16 @@ function Admin({}: Props) {
           >
             Add Paragraph
           </div>
+        </div>
+        <div className=" space-y-2">
+          <p className=" text-lg font-semibold">Youtube Video URL</p>
+          <input
+            type="text"
+            required
+            onChange={(e) => setYoutubeURL(e.target.value)}
+            placeholder="PASTE THE YOUTUBE VIDEO URL [Leave empty if you don't want to include a video in the Article"
+            className=" border outline-none p-4 w-full"
+          />
         </div>
 
         <div className=" space-y-2">

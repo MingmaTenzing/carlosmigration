@@ -19,6 +19,7 @@ export interface Database {
           para: string[] | null
           subtitle: string | null
           title: string | null
+          youtube_url: string | null
         }
         Insert: {
           article_img?: string | null
@@ -29,6 +30,7 @@ export interface Database {
           para?: string[] | null
           subtitle?: string | null
           title?: string | null
+          youtube_url?: string | null
         }
         Update: {
           article_img?: string | null
@@ -39,6 +41,7 @@ export interface Database {
           para?: string[] | null
           subtitle?: string | null
           title?: string | null
+          youtube_url?: string | null
         }
         Relationships: []
       }
