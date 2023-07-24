@@ -22,7 +22,7 @@ interface article {
   youtube_url: string | null;
 }
 
-async function getArticle(route: string) {
+export async function getArticle(route: string) {
   const { data, error } = await supabase
     .from("Blogs")
     .select("*")

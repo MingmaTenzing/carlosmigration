@@ -1,21 +1,43 @@
-import { Metadata } from "next";
 import { supabase } from "../../../../../components/supabase/supabaseclient";
-import { title } from "process";
-import { Blog } from "../../page";
 import { unescape } from "querystring";
-import RecentBlogs from "../../../../../utilities/RecentBlogs";
-import VisaNavigation from "../../../../../utilities/VisaNavigation";
-
+import replacementImg from "../../../../../assests/Replace Image.jpg";
 type Props = {
   params: { articleTitle: string; articleID: string };
 };
+async function getArticle({ params }: Props) {
+  const { data, error } = await supabase
+    .from("Blogs")
+    .select("*")
+    .eq("id", params.articleID);
+
+  return data;
+}
 
 export async function generateMetadata({ params }: Props) {
   const removeSpaces = unescape(params.articleTitle);
+  const article = await getArticle({ params });
+
+  if (!article || article.length === 0) {
+    const opengraph = { images: replacementImg };
+    return {
+      title: removeSpaces,
+      description: "Carlos Castro Migration Blog Article",
+      opengraph: {
+        ...opengraph,
+        title: removeSpaces,
+      },
+    };
+  }
+
+  const openGraphImage = { images: [article[0].article_img] };
 
   return {
     title: removeSpaces,
     description: "Carlos Castro Migration Blog Article",
+    opengraph: {
+      ...openGraphImage,
+      title: removeSpaces,
+    },
   };
 }
 
