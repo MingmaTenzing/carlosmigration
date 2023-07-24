@@ -57,6 +57,7 @@ function BlogPost() {
           src={post?.article_img!}
           alt={post?.title!}
           width={800}
+          placeholder="blur"
           height={500}
           className=" max-h-[500px] object-cover object-center rounded-lg"
         />
