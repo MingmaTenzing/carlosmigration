@@ -34,6 +34,7 @@ function BlogPost() {
   const route: string = useParams().articleId;
 
   const [post, setPost] = useState<article>();
+  const [loading, setLoading] = useState<boolean>(false);
   const date = new Date(post?.created_at!);
   const fromattedDAted = date.toLocaleDateString("en-US", {
     year: "numeric",
@@ -42,9 +43,13 @@ function BlogPost() {
   });
 
   useEffect(() => {
+    setLoading(true);
     async function fetchArticle() {
       const article = await getArticle(route);
-      setPost(article![0]);
+      if (article) {
+        setPost(article[0]);
+        setLoading(false);
+      }
     }
     fetchArticle();
   }, []);
@@ -57,7 +62,6 @@ function BlogPost() {
           src={post?.article_img!}
           alt={post?.title!}
           width={800}
-          placeholder="blur"
           height={500}
           className=" max-h-[500px] object-cover object-center rounded-lg"
         />
@@ -92,18 +96,10 @@ function BlogPost() {
         {post?.youtube_url && (
           <div>
             <div className=" md:hidden">
-              <YouTubeEmbed
-                height={300}
-                url={post.youtube_url}
-                width={320}
-              />
+              <YouTubeEmbed height={300} url={post.youtube_url} width={320} />
             </div>
             <div className=" hidden md:flex">
-              <YouTubeEmbed
-                height={450}
-                url={post.youtube_url}
-                width={650}
-              />
+              <YouTubeEmbed height={450} url={post.youtube_url} width={650} />
             </div>
           </div>
         )}
