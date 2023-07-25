@@ -3,12 +3,12 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { supabase } from "../../../../../components/supabase/supabaseclient";
-import { TikTokEmbed } from "react-social-media-embed";
 
 import VisaNavigation from "../../../../../utilities/VisaNavigation";
 import RecentBlogs from "../../../../../utilities/RecentBlogs";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
-import { InstagramEmbed, YouTubeEmbed } from "react-social-media-embed";
+import {  YouTubeEmbed } from "react-social-media-embed";
+
 
 interface article {
   article_img: string | null;
@@ -22,7 +22,7 @@ interface article {
   youtube_url: string | null;
 }
 
-export async function getArticle(route: string) {
+ async function getArticle(route: string) {
   const { data, error } = await supabase
     .from("Blogs")
     .select("*")
