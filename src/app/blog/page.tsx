@@ -19,6 +19,7 @@ export interface Blog {
 
 function Blog({}: Props) {
   const [Articles, setArticles] = useState<Blog[]>();
+  const [sortedArticles, setSortedArticles] = useState<Blog[]>();
   const [loading, setLoading] = useState<boolean>(false);
   const loadingArray: number[] = new Array(20).fill(0);
 
@@ -27,9 +28,17 @@ function Blog({}: Props) {
     async function getArticles() {
       const { data: Blogs, error } = await supabase.from("Blogs").select("*");
       if (Blogs) {
-        setArticles(Blogs);
-        setLoading(false)
+        setArticles(
+          Blogs?.sort(
+            (a, b) =>
+              new Date(b.created_at!).getTime() -
+              new Date(a.created_at!).getTime()
+          )
+        );
+
+        setLoading(false);
       }
+
       if (error) {
         console.log(error);
       }
@@ -37,6 +46,7 @@ function Blog({}: Props) {
 
     getArticles();
   }, []);
+  console.log(sortedArticles);
   return (
     <div>
       {loading ? (

@@ -61,7 +61,7 @@ function RecentBlogs({ articleToNotInclude }: Props) {
                   alt={article.title!}
                   width={100}
                   height={100}
-                  className=" rounded-lg w-24 h-20 object-cover"
+                  className=" rounded-lg min-w-24 max-h-20 object-cover"
                 />
                 <div className=" ">
                   <p className=" text-[12px] text-[#73727c]">
