@@ -11,7 +11,7 @@ export interface Database {
     Tables: {
       Blogs: {
         Row: {
-          article_img: string | null
+          article_img: string | null 
           author: string | null
           author_img: string | null
           created_at: string | null
