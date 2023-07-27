@@ -1,6 +1,7 @@
 import { ImageResponse } from "next/server";
 import { supabase } from "../../../../../components/supabase/supabaseclient";
 import australia from "../../../../../assests/Australia.jpg";
+import { unescape } from "querystring";
 // Route segment config
 export const runtime = "edge";
 
@@ -18,6 +19,8 @@ type Props = {
 
 // Image generation
 export default async function Image({ params }: Props) {
+  const removeSpaces = unescape(params.articleTitle);
+
  
 
 
@@ -32,8 +35,8 @@ export default async function Image({ params }: Props) {
             tw="  w-[500px] absolute  left-0  z-10 "
             src="https://byeilculfqugwxetgrkj.supabase.co/storage/v1/object/public/article%20images/public/map.png"
           />
-          <h1 tw="text-[40px] font-bold  z-20">
-          {params.articleTitle}
+          <h1  tw="text-[40px] font-bold  z-20">
+          {removeSpaces}
           </h1>
         </div>
 
