@@ -8,6 +8,7 @@ import VisaNavigation from "../../../../../utilities/VisaNavigation";
 import RecentBlogs from "../../../../../utilities/RecentBlogs";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import {  YouTubeEmbed } from "react-social-media-embed";
+import fallbackImg from "../../../../../assests/blogfallbackImg.png"
 
 
 interface article {
@@ -59,12 +60,12 @@ function BlogPost() {
       {/** ARTICLE section */}
       <div className=" space-y-6 md:w-[80%] m-auto lg:w-[750px]   ">
         <Image
-          src={post?.article_img!}
+          src={post?.article_img || fallbackImg}
           alt={post?.title!}
           width={800}
           height={500}
-          className=" max-h-[500px] object-cover object-center rounded-lg"
-        />
+          className=" max-h-[500px] w-full  object-cover object-center rounded-lg"
+        />a
 
         <div className=" space-y-3">
           <h1 className="  font-bold text-2xl md:text-3xl lg:text-4xl">
