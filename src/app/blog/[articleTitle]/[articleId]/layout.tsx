@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: Props) {
   const removeSpaces = unescape(params.articleTitle);
   return {
     title: removeSpaces,
-    description: "Carlos Castro Migration Blog Article",
+    description: "Carlos Castro Migration Immigration News and Information",
   };
 }
 
