@@ -20,18 +20,12 @@ function ReviewBlock({ review }: props) {
       </div>
       <p className=" italic">{review.reviewText}</p>
       <div className=" flex items-center space-x-4">
-        <Image
-          src={review.photoURL}
-          alt="Review User Photo"
-          width={100}
-          height={100}
-          className=" w-[90px] h-[90px] object-cover rounded-full"
-        />
+        
         <div>
           <h3 className=" font-bold  text-lg  text-reviewText ">
             {review.user}
           </h3>
-          <p className=" uppercase ">{review.position}</p>
+          <p className=" uppercase  text-gray-400  text-sm ">{review.position}</p>
         </div>
       </div>
     </div>
