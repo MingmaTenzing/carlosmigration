@@ -27,7 +27,7 @@ export default async function Image({ params }: Props) {
         <img tw=""
           src={`https://byeilculfqugwxetgrkj.supabase.co/storage/v1/object/public/article%20images/public/${params.articleTitle}`}
         />
-        <div tw="flex absolute bottom-0 right-0  bg-white text-black text-4xl p-4 font-bold">Carlos Castro Migration</div>
+        <img  tw='absolute  bottom-0 right-10  w-[300px] object-cover' src= "https://byeilculfqugwxetgrkj.supabase.co/storage/v1/object/public/article%20images/authors/og" />
       </div>
     )
   );
