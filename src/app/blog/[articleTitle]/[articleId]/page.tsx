@@ -65,7 +65,7 @@ function BlogPost() {
           width={800}
           height={500}
           className=" max-h-[500px] w-full  object-cover object-center rounded-lg"
-        />a
+        />
 
         <div className=" space-y-3">
           <h1 className="  font-bold text-2xl md:text-3xl lg:text-4xl">
