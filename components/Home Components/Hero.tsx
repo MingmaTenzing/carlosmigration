@@ -6,8 +6,10 @@ import visa from "../../assests/visa application.jpg";
 import { Fade, Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { AnimatePresence, motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 type Props = {};
 function Hero({}: Props) {
+  const router = useRouter();
   const fadImages = [
     {
       src: travel,
@@ -47,7 +49,7 @@ function Hero({}: Props) {
             <h2 className="  font-bold text-white text-3xl md:text-5xl  lg:text-6xl  ">
               {fadeImage.caption}
             </h2>
-            <button className=" bg-[#ff5857] text-white p-3 mt-4 rounded-lg hover:bg-[#444] text-sm px-4 transition-all ease-linear duration-150">Contact Now</button>
+            <button onClick={ () => router.push("/contact")} className="  bg-orange text-white p-3 mt-4 rounded-lg hover:bg-[#444] text-sm px-4 transition-all ease-linear duration-150">Contact Now</button>
 </div>
 
             <span className=" w-full h-full absolute top-0 left-0 opacity-90 z-10 bg-[#201c2c]"></span>
