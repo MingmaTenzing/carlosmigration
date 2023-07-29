@@ -28,7 +28,7 @@ function Clients({}: Props) {
           alt="Connecting with Clients and Students"
           width={1443}
           height={835}
-          className=" rounded-lg  lg:w-[600px]"
+          className=" rounded-lg  object-cover  lg:w-[600px]"
         />
       </div>
     </div>
