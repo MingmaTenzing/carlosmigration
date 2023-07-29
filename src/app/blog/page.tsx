@@ -54,7 +54,7 @@ function Blog({}: Props) {
           {loadingArray.map((_, index) => (
             <div
               key={index}
-              className=" w-[240px] lg:w-[270px] h-[300px] m-1 border"
+              className=" w-[300px] lg:w-[270px] h-[300px] m-1 border"
             >
               <div className=" h-1/2 bg-gray-400 animate-pulse"></div>
               <div className=" animate-pulse">
