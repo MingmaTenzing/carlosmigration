@@ -53,7 +53,7 @@ function Visas({}: Props) {
         </div>
           {/** OFFERING  */}
             {/** OFFERING  */}
-            <div className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
+            <div onClick={() => router.push("/visas/categories/skilledvisa")} className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
           <div className=" relative w-full h-[45%]">
             <Image
               src={nurse}
@@ -84,7 +84,7 @@ function Visas({}: Props) {
         </div>
           {/** OFFERING  */}
             {/** OFFERING  */}
-            <div className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
+            <div onClick={() => router.push("/visas/categories/familyvisa")} className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
           <div className=" relative w-full h-[45%]">
             <Image
               src={familyvisa}
@@ -115,7 +115,7 @@ function Visas({}: Props) {
         </div>
           {/** OFFERING  */}
             {/** OFFERING  */}
-            <div className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
+            <div onClick={() => router.push("/visas/categories/employersponsoredvisa")} className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
           <div className=" relative w-full h-[45%]">
             <Image
               src={employer}
@@ -146,7 +146,7 @@ function Visas({}: Props) {
         </div>
           {/** OFFERING  */}
             {/** OFFERING  */}
-            <div className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
+            <div onClick={() => router.push("/visas/categories/businessvisa")} className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
           <div className=" relative w-full h-[45%]">
             <Image
               src={business}
@@ -177,7 +177,7 @@ function Visas({}: Props) {
         </div>
           {/** OFFERING  */}
             {/** OFFERING  */}
-            <div className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
+            <div onClick={() => router.push("/visas/categories/othervisa")} className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
           <div className=" relative w-full h-[45%]">
             <Image
               src={tourist}
