@@ -8,7 +8,7 @@ import map from "../../assests/map.png";
 type Props = {};
 function HeroServices({}: Props) {
   return (
-    <div className="  mt-10 relative p-4 md:justify-center md:flex-row md:flex-wrap flex flex-col items-center">
+    <div className="  mt-10 relative p-4 md:justify-center md:flex-row md:flex-wrap flex flex-col items-center z-10">
       <div className="group rounded-lg  z-40 overflow-hidden relative p-4 m-4 cursor-pointer w-[340px] lg:w-[350px] h-[300px] border  flex space-x-8">
         <div>
           <Image
