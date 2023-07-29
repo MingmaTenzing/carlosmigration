@@ -22,7 +22,7 @@ function Footer({}: Props) {
             <EnvelopeOpenIcon className=" w-10 text-orange" />
             <div className=" flex flex-col">
               <p className=" uppercase text-gray-400">Email Address</p>
-              <p>carloscastromigration@gmail.com</p>
+              <p>carlos@goldenticketmigration.com</p>
             </div>
           </div>
 
@@ -30,8 +30,8 @@ function Footer({}: Props) {
             <PhoneIcon className=" w-10 text-orange" />
 
             <div className=" flex flex-col">
-              <p className=" uppercase text-gray-400">PHone number</p>
-              <p>042012344566</p>
+              <p className=" uppercase text-gray-400">Phone number</p>
+              <p>+61 425 481 703</p>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ function Footer({}: Props) {
             <div className=" flex space-x-3">
               <Image
                 src={twitter}
-                className="    invert grayscale hover:scale-110 transition-transform ease-linear duration-200 cursor-pointer md:w-8   w-6"
+                className="   invert grayscale hover:scale-110 transition-transform ease-linear duration-200 cursor-pointer md:w-8   w-6"
                 alt="Twitter Logo"
               />
               <Image

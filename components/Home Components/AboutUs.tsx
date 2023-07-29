@@ -1,7 +1,7 @@
 import { CheckIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import Carlos from "../../assests/Carlos Charlie Castro.jpg"
-import dots from "../../assests/dots.png"
+import Carlos from "../../assests/Carlos Charlie Castro.jpg";
+import dots from "../../assests/dots.png";
 type Props = {};
 function AboutUs({}: Props) {
   return (
@@ -28,44 +28,46 @@ function AboutUs({}: Props) {
           </p>
         </div>
         <div className=" space-y-3 lg:space-y-0 lg:flex lg:space-x-10 md:text-lg">
-            <div  className=" space-y-3">
-
-          <div className=" items-center space-x-4 flex">
-            <CheckIcon className=" w-6 text-orange" />
-            <p className=" font-semibold">95% success rates</p>
-          </div>
-          <div className=" items-center space-x-4 flex">
-            <CheckIcon className=" w-6 text-orange" />
-            <p className=" font-semibold">Free consultation</p>
-          </div>
-          <div className=" items-center space-x-4 flex">
-            <CheckIcon className=" w-6 text-orange" />
-            <p className=" font-semibold">Easy & fast process</p>
-          </div>
+          <div className=" space-y-3">
+            <div className=" items-center space-x-4 flex">
+              <CheckIcon className=" w-6 text-orange" />
+              <p className=" font-semibold">Free consultation</p>
             </div>
-
-            <div className="  space-y-3">
-
-          <div className=" items-center space-x-4 flex">
-            <CheckIcon className=" w-6 text-orange" />
-            <p className=" font-semibold"> Affordable Fees</p>
-          </div>
-          <div className=" items-center space-x-4 flex">
-            <CheckIcon className=" w-6 text-orange" />
-            <p className=" font-semibold"> Expert immigration agents</p>
-          </div>
-          <div className=" items-center space-x-4 flex">
-            <CheckIcon className=" w-6 text-orange" />
-            <p className=" font-semibold"> Over 30 years experience</p>
-          </div>
+            <div className=" items-center space-x-4 flex">
+              <CheckIcon className=" w-6 text-orange" />
+              <p className=" font-semibold">Easy & fast process</p>
             </div>
+          </div>
+
+          <div className="  space-y-3">
+            <div className=" items-center space-x-4 flex">
+              <CheckIcon className=" w-6 text-orange" />
+              <p className=" font-semibold"> Affordable Fees</p>
+            </div>
+            <div className=" items-center space-x-4 flex">
+              <CheckIcon className=" w-6 text-orange" />
+              <p className=" font-semibold"> Expert immigration agents</p>
+            </div>
+          </div>
         </div>
       </div>
 
       <div className=" flex justify-center ">
-        <Image src={Carlos} alt="Carlos Castro" width={312} height={400}  className=" md:min-w-[400px]"/>
+        <Image
+          src={Carlos}
+          alt="Carlos Castro"
+          width={312}
+          height={400}
+          className=" md:min-w-[400px]"
+        />
       </div>
-      <Image src={dots} width={119} height={247} alt="dots" className=" hidden lg:flex absolute -bottom-[280px] left-40" />
+      <Image
+        src={dots}
+        width={119}
+        height={247}
+        alt="dots"
+        className=" hidden lg:flex absolute -bottom-[280px] left-40"
+      />
     </div>
   );
 }

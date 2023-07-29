@@ -8,9 +8,31 @@ import igicon from "../../../assests/ig.png";
 import twitterIcon from "../../../assests/twitter.png";
 import tiktokIcon from "../../../assests/tiktok.png";
 import HeroBackground from "../../../utilities/HeroBackground";
+import { FormEvent, useRef } from "react";
+
+import emailjs from "@emailjs/browser";
 
 type Props = {};
 function Contact({}: Props) {
+  const form = useRef(null);
+  function sendMessage(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+      process.env.NEXT_PUBLIC_SERVICE_KEY!,
+       process.env.NEXT_PUBLIC_TEMPLATE_KEY! ,
+        form.current!,
+        "5lDQ2fsinXAaz-OgN"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
   return (
     <div>
       <HeroBackground
@@ -31,13 +53,18 @@ function Contact({}: Props) {
       <div className=" mt-6 flex flex-col items-center space-y-10 md:flex-row md:space-y-0 md:justify-center md:space-x-6 md:items-start">
         {/** FORM AND CONTACT DETAILS */}
         <div>
-          <form className="  space-y-4  flex flex-col justify-center items-center  ">
+          <form
+            ref={form}
+            onSubmit={sendMessage}
+            className="  space-y-4  flex flex-col justify-center items-center  "
+          >
             <div className=" space-y-3">
               <div>
                 <input
                   className="  h-[60px]  p-2  min-w-[300px] md:w-[400px] outline-none bg-gray-100 rounded-lg "
                   type="text"
                   required
+                  name="user_name"
                   placeholder="Your Name"
                 ></input>
               </div>
@@ -46,6 +73,7 @@ function Contact({}: Props) {
                   className="  h-[60px] p-2   min-w-[300px] md:w-[400px] outline-none bg-gray-100 rounded-lg "
                   type="email"
                   required
+                  name="user_email"
                   placeholder="Your Eamil Address"
                 ></input>
               </div>
@@ -53,10 +81,15 @@ function Contact({}: Props) {
             <div>
               <textarea
                 placeholder=" Enter your Message"
+                name="message"
                 className=" p-2  bg-gray-100 outline-none   min-w-[300px] md:w-[400px] rounded-lg h-[300px]"
               />
             </div>
-            <button className=" font-semibold bg-orange text-white p-4 rounded-lg px-6 hover:scale-105 transition-all ease-linear duration-150 hover:shadow-lg ">
+            <button
+              type="submit"
+              value="Send"
+              className=" font-semibold bg-orange text-white p-4 rounded-lg px-6 hover:scale-105 transition-all ease-linear duration-150 hover:shadow-lg "
+            >
               Submit
             </button>
           </form>
@@ -69,12 +102,12 @@ function Contact({}: Props) {
               <PhoneIcon className=" w-8 text-white" />
               <div className=" font-semi text-white">
                 <h2 className=" uppercase">Call Now</h2>
-                <p className=" font-semibold">0420 45343 3434</p>
+                <p className=" font-semibold">+61 425 481 703</p>
               </div>
             </div>
             <div className=" space-y-8 p-4 ">
               <div className=" space-y-4 text-gray-600">
-                <p>carloscastro@support.com</p>
+                <p>carlos@goldenticketmigration.com </p>
                 <p>121 Hay Street, West Perth, Perth, Western Australia</p>
               </div>
 
