@@ -18,7 +18,7 @@ export interface review {
 function Reviews() {
   
   return (
-    <div className=" overflow-hidden  z-20 relative p-4 bg-gray-100 py-20  pb-40">
+    <div className="   z-20 relative p-4 bg-gray-100 py-20  pb-40">
       <div className=" z-10 flex flex-col items-center space-y-2">
         <h3 className=" uppercase text-sm text-orange">Reviews</h3>
         <h2 className=" font-bold text-2xl md:text-3xl lg:text-4xl">
@@ -40,7 +40,7 @@ function Reviews() {
         <span className=" font-bold text-gray-300 text-5xl">....</span>
       </div>
 
-      <Image src={map} alt="Map image" width={1894} height={819} className="  -z-10 top-0 left-1/2 -translate-x-1/2 md:min-w-[1200px]   absolute" />
+      <Image src={map} alt="Map image" width={1894} height={819} className="  -z-10 -top-[100px] left-1/2 -translate-x-1/2 md:min-w-[1200px] hidden md:flex absolute" />
   
     </div>
   );

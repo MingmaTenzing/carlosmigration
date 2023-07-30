@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <main>
-          <Nav />
+          <Nav  />
           <div>
             <Provider store={store}>
               <PersistGate loading={null} persistor={persistor} >

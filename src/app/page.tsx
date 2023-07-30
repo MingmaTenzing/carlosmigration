@@ -6,11 +6,13 @@ import Reviews from "../../components/Home Components/Reviews";
 import RecentBlogs from "../../components/Home Components/RecentBlogs";
 import HeroServices from "../../components/Home Components/HeroServices";
 import { Metadata } from "next";
+import Webinars from "../../components/Home Components/Webinars";
 
 
 export const metadata: Metadata = {
   title: "Carlos Castro Migration",
   description: " Carlos Castro Migration and Education Services",
+  
 
 }
 
@@ -23,6 +25,7 @@ export default function Home() {
       <AboutUs />
       <Offering />
       <Clients />
+      <Webinars />
       <Reviews />
       <RecentBlogs />
     </div>
