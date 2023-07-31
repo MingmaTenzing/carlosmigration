@@ -24,12 +24,9 @@ function HeroServices({}: Props) {
           <h2 className=" font-bold  text-xl  hover:text-orange transition-all ease-linear duration-200">
             Visa Application
           </h2>
-          <p> Lorem ipsum is dolo sit amet, conse ctetur.</p>
+          <p> Obtaining the right visa is the key that unlocks the door to Australia.</p>
 
-          <div className=" flex items-center space-x-2">
-            <ArrowRightCircleIcon className="w-6" />
-            <p className=" text-sm font-light"> Read More</p>
-          </div>
+          
         </div>
 
         <span className="  -z-10  -left-[60px] -top-4 absolute w-[120px] h-[120px]  bg-gray-300  transition-all ease-linear duration-300  group-hover:bg-[#ff5c54] rounded-full"></span>
@@ -51,12 +48,9 @@ function HeroServices({}: Props) {
           <h2 className=" font-bold  text-xl  hover:text-orange transition-all ease-linear duration-200">
             Education Consultation
           </h2>
-          <p> Lorem ipsum is dolo sit amet, conse ctetur.</p>
+          <p> We'll help you choose the right course and path for you.</p>
 
-          <div className=" flex items-center space-x-2">
-            <ArrowRightCircleIcon className="w-6" />
-            <p className=" text-sm font-light"> Read More</p>
-          </div>
+          
         </div>
 
         <span className="  -z-10  -left-[60px] -top-4 absolute w-[120px] h-[120px]  bg-gray-300  transition-all ease-linear duration-300  group-hover:bg-[#ff5c54] rounded-full"></span>
@@ -78,12 +72,9 @@ function HeroServices({}: Props) {
           <h2 className=" font-bold  text-xl  hover:text-orange transition-all ease-linear duration-200">
             Skills Assement
           </h2>
-          <p> Lorem ipsum is dolo sit amet, conse ctetur.</p>
+          <p> Our team of professionals will help you do your skills assessment.</p>
 
-          <div className=" flex items-center space-x-2">
-            <ArrowRightCircleIcon className="w-6" />
-            <p className=" text-sm font-light"> Read More</p>
-          </div>
+         
         </div>
 
         <span className="  -z-10  -left-[60px] -top-4 absolute w-[120px] h-[120px]  bg-gray-300  transition-all ease-linear duration-300  group-hover:bg-[#ff5c54] rounded-full"></span>

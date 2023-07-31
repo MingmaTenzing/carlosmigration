@@ -13,7 +13,7 @@ const reviews = [
     id: 2,
     reviewText:
       "Carlos is not just a career guide; he is a mentor who empowers individuals to reach their full potential. His personalized approach and deep understanding of the industry have been invaluable in helping me navigate through the complexities of career choices. His positive attitude and unwavering support have motivated me to pursue my dreams. ",
-    user: "Mingma Tenzing ",
+    user: "Peterson R. ",
     position: "student",
     photoURL: userPhoto,
   },
@@ -29,15 +29,15 @@ const reviews = [
     id: 5,
     reviewText:
       "Carlos is a migration adviser par excellence! His extensive knowledge of immigration processes and regulations has been instrumental in guiding me through the intricate journey of obtaining a visa. He meticulously reviewed my case, provided invaluable advice, and ensured that all the necessary documentation was in order. His unwavering dedication and commitment to his clients' success are truly commendable. ",
-    user: "Kevin Martin",
-    position: "student",
+    user: "Agung K.",
+    position: "Chef",
     photoURL: userPhoto,
   },
   {
     id: 6,
     reviewText:
       "Carlos has been an invaluable resource in helping me explore various skills and career options across different states in Australia. His extensive knowledge of each state's job market, industry trends, and opportunities allowed me to make informed decisions about my career path. With Carlos's guidance, I was able to identify the best locations that aligned with my skills and interests. His personalized approach and genuine interest in my success have been truly inspiring. ",
-    user: "Kevin Martin",
+    user: "Social Media Manager",
     position: "student",
     photoURL: userPhoto,
   },
