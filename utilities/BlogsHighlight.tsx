@@ -8,7 +8,7 @@ type Props = {
   author: string | null;
   date: string | null;
   title: string | null;
-  id: string;
+  id: string | null;
 };
 function BlogsHighlight({ image, title, author, date, id }: Props) {
   const router = useRouter();

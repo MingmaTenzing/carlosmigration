@@ -7,7 +7,7 @@ import WebinarItem from "../../utilities/WebinarItem";
 type Props = {};
 function Webinars({}: Props) {
   return (
-    <div className=" my-20 ">
+    <div className=" z-10 my-20 ">
       <div className=" flex space-y-2 justify-center text-center flex-col items-center">
         <h3 className=" uppercase text-sm text-orange">
           Helping you even further{" "}
@@ -17,7 +17,7 @@ function Webinars({}: Props) {
         </h2>
       </div>
 
-      <div className=" p-4  md:flex flex-wrap justify-center">
+      <div className=" p-4   md:flex flex-wrap justify-center  z-0">
         {/** WEBINAR BLOCK */}
         <WebinarItem
           image={PTE}
