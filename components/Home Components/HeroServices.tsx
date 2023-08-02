@@ -48,7 +48,7 @@ function HeroServices({}: Props) {
           <h2 className=" font-bold  text-xl  hover:text-orange transition-all ease-linear duration-200">
             Education Consultation
           </h2>
-          <p> We'll help you choose the right course and path for you.</p>
+          <p> We&apos;ll help you choose the right course and path for you.</p>
 
           
         </div>

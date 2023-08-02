@@ -1,20 +1,20 @@
-'use client'
+"use client";
 import { useRef } from "react";
 import { useHover } from "usehooks-ts";
 import { motion, AnimatePresence } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 
 type Props = {
-    image: StaticImageData,
-    title: string,
-    subtitle: string,
+  image: StaticImageData;
+  title: string;
+  subtitle: string;
 };
-function WebinarItem({image, title, subtitle}: Props) {
-    const hoverRef = useRef(null);
-    const isHover = useHover(hoverRef);
+function WebinarItem({ image, title, subtitle }: Props) {
+  const hoverRef = useRef(null);
+  const isHover = useHover(hoverRef);
   return (
-    <div className="m-2">
-      <div ref={hoverRef} className="group relative z-50 overflow-hidden">
+    <div className="m-2 ">
+      <div ref={hoverRef} className="group relative  overflow-hidden">
         <Image
           src={image}
           alt=" PTE TEST Preparation"
@@ -51,9 +51,7 @@ function WebinarItem({image, title, subtitle}: Props) {
                 {" "}
                 <div className=" w-1/2 h-1 bg-orange  rounded-lg" />
                 <p className=" text-white  text-2xl font-bold">{title}</p>
-                <p className=" text-white">
-                  {subtitle}
-                </p>
+                <p className=" text-white">{subtitle}</p>
               </motion.div>
             )}
           </AnimatePresence>
