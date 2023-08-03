@@ -81,7 +81,7 @@ function Nav({}: Props) {
               },
             }}
             exit={{ x: 100, opacity: 0 }}
-            className="  p-4 absolute   h-[100vh] w-[250px] right-0 bg-gray-100 top-0  z-20"
+            className="  p-4 absolute   h-[100vh] w-[250px] right-0 bg-gray-100 top-0  z-50"
           >
             <div className="   flex justify-end">
               <XMarkIcon
