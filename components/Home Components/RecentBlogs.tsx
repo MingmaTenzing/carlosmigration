@@ -6,12 +6,15 @@ import { supabase } from "../supabase/supabaseclient";
 import { useEffect, useState } from "react";
 import { getArticles } from "../../utilities/getArticles";
 import { Blog } from "@/app/blog/page";
-
+import Aos from "aos";
+import 'aos/dist/aos.css';
 type Props = {};
 
 function RecentBlogs({}: Props) {
   const [sortedArticles, setSortedArticles] = useState<Blog[]>();
   useEffect(() => {
+    Aos.init()
+    
     async function getDAta() {
       const articles = await getArticles();
       setSortedArticles(
@@ -28,12 +31,12 @@ function RecentBlogs({}: Props) {
   return (
     <div className=" py-40 relative">
       <div className=" space-y-4 flex flex-col  items-center">
-        <span className=" text-orange">News & Updates</span>
-        <h2 className=" font-bold text-2xl md:text-3xl lg:text-4xl">
+        <span data-aos="fade-up"  data-aos-once="true" data-aos-duration="600"  className=" text-orange">News & Updates</span>
+        <h2  data-aos="fade-up"  data-aos-once="true" data-aos-duration="700"  className=" font-bold text-2xl md:text-3xl lg:text-4xl">
           Recent Blogs Posts
         </h2>
       </div>
-      <div className=" flex flex-col  items-center md:flex-row md:justify-center md:flex-wrap">
+      <div data-aos="fade-up"  data-aos-once="true" data-aos-duration="1000"  className=" flex flex-col  items-center md:flex-row md:justify-center md:flex-wrap">
       {sortedArticles
         ?.map((article) => (
           <BlogsHighlight

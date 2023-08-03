@@ -6,24 +6,30 @@ import studentVisa from "../../assests/student visa.jpg";
 import touristVisa from "../../assests/tourist.jpg";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 type Props = {};
 function Offering({}: Props) {
   const router = useRouter();
+  useEffect(() => {
+    Aos.init();
+  },[])
   return (
     <div className=" lg:pt-40   py-20 bg-gray-100  p-4 lg:mt-32 mt-20">
       <div className=" flex flex-col  items-center text-center">
-        <h3 className=" text-orange uppercase font-semibold text-sm">
+        <h3 data-aos="fade-up"  data-aos-once="true" data-aos-duration="600" className=" text-orange uppercase font-semibold text-sm">
           {" "}
           what i offer
         </h3>
-        <h2 className=" font-bold text-2xl md:text-3xl lg:text-4xl">
+        <h2  data-aos="fade-up"  data-aos-once="true" data-aos-duration="700" className=" font-bold text-2xl md:text-3xl lg:text-4xl">
           Providing Value for Visa Categories
         </h2>
       </div>
 
-      <div className=" mt-10 flex flex-col md:flex-row md:flex-wrap md:justify-center items-center">
+      <div  className=" mt-10 flex flex-col md:flex-row md:flex-wrap md:justify-center items-center">
         {/** OFFERING  */}
-        <div className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
+        <div   data-aos="fade-right"  data-aos-once="true" data-aos-duration="900"   data-aos-delay="50" className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
           <div className=" relative w-full h-[45%]">
             <Image
               src={familyvisa}
@@ -59,7 +65,7 @@ function Offering({}: Props) {
         {/** OFFERING  */}
 
         {/** OFFERING  */}
-        <div className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
+        <div  data-aos="fade-up"  data-aos-once="true" data-aos-duration="1100"   data-aos-delay="70" className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
           <div className=" relative w-full h-[45%]">
             <Image
               src={workVisa}
@@ -95,7 +101,7 @@ function Offering({}: Props) {
         {/** OFFERING  */}
 
         {/** OFFERING  */}
-        <div className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
+        <div  data-aos="fade-left"  data-aos-once="true" data-aos-duration="1200"   data-aos-delay="80" className="   bg-white hover:shadow-lg cursor-pointer lg-hover:scale-110 transition-all ease-linear duration-200 cu m-4 relative group overflow-hidden w-[340px] h-[400px] border rounded-lg">
           <div className=" relative w-full h-[45%]">
             <Image
               src={studentVisa}
