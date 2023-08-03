@@ -4,7 +4,8 @@ import logo from "../../assests/Carlos Logo.png";
 import twitter from "../../assests/twitter.png";
 import facebook from "../../assests/facebook.png";
 import instagram from "../../assests/instagram.png";
-import operaHouse from "../../assests/opera.png"
+import operaHouse from "../../assests/opera.png";
+import Link from "next/link";
 type Props = {};
 function Footer({}: Props) {
   return (
@@ -41,10 +42,13 @@ function Footer({}: Props) {
         <div className="   md:flex  md:justify-around space-y-6">
           {/** ABOUT */}
           <div className=" space-y-3 md:w-1/3">
-            <h2 className=" font-semibold  text-lg">About</h2>
             <p className=" text-gray-400 ">
-              lorem ipsum dolor sit amet, consect etur adi pisicing elit sed do
-              eiusmod tempor incididunt ut labore.
+              Achieve your dream goal of migrating to Australia with Carlos
+              Castro. Follow me on socials to stay upto date with the latest
+              news.
+            </p>
+            <p className=" text-gray-400 ">
+              Migration Agent Registration Number (MARN): 2318194
             </p>
             <div className=" flex space-x-3">
               <Image
@@ -65,25 +69,51 @@ function Footer({}: Props) {
             </div>
           </div>
           {/** Links */}
-          <div className=" space-y-3">
+          <div className=" space-y-3 flex flex-col">
             <h2 className=" font-semibold text-lg">Links</h2>
-            <p className=" text-gray-400">Our projects</p>
-            <p className=" text-gray-400">About Us</p>
-            <p className=" text-gray-400">Our Mission</p>
-            <p className=" text-gray-400">Meet the Team</p>
-            <p className=" text-gray-400">Contact</p>
+
+            <Link href="/home" className=" text-gray-400">
+              Home
+            </Link>
+            <Link href="/visas" className=" text-gray-400">
+              Visas
+            </Link>
+            <Link href="/services" className=" text-gray-400">
+              Services
+            </Link>
+            <Link href="/contact" className=" text-gray-400">
+              Contact
+            </Link>
           </div>
-          <div className=" space-y-3">
+          <div className=" space-y-3 flex flex-col">
             <h2 className=" font-semibold text-lg">Explore</h2>
-            <p className=" text-gray-400">Site Map</p>
-            <p className=" text-gray-400">Help Center</p>
-            <p className=" text-gray-400">Terms of Use</p>
-            <p className=" text-gray-400">Privacy Policy</p>
+            <Link href="/blog" className=" text-gray-400">
+              Blog
+            </Link>
+            <Link
+              href="/visas/categories/studentvisa"
+              className=" text-gray-400"
+            >
+              Student Visa
+            </Link>
+            <Link
+              href="/visas/categories/employersponsoredvisa"
+              className=" text-gray-400"
+            >
+              Employer Sponsored Visa
+            </Link>
+            <Link href="/visas/categories/othervisa" className=" text-gray-400">
+              Work Visa
+            </Link>
           </div>
         </div>
       </div>
       <div>
-        <Image src={operaHouse} className=" invert  z-10 hidden md:flex absolute lg:w-[600px] -bottom-10 lg:-bottom-30 right-0 opacity-20" alt="Opera House Sydney " />
+        <Image
+          src={operaHouse}
+          className=" invert  z-10 hidden md:flex absolute lg:w-[600px] -bottom-10 lg:-bottom-30 right-0 opacity-20"
+          alt="Opera House Sydney "
+        />
       </div>
     </div>
   );

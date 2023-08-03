@@ -51,10 +51,10 @@ export default function RootLayout({
             <AnimatePresence>
             {openModal && (
               <motion.div
-              initial={{opacity:0, y:100, scale:0}}
-              animate={{opacity:1, y:0, scale:1}}
-              exit={{opacity:0, y:100, scale:0}}
-              transition={{ type:"spring"}} className=" space-y-4  rounded-lg flex flex-col items-center fixed w-[200px]  right-4  bottom-[200px] md:bottom-30 z-50 bg-[#242424] p-4">
+              initial={{opacity:0, x:100, }}
+              animate={{opacity:1, x:0, }}
+              exit={{opacity:0, x:100, }}
+              transition={{ type:"spring"}} className=" space-y-4  rounded-lg flex flex-col items-center fixed w-[200px]  right-4 bottom-28 lg:bottom-[200px] md:bottom-30 z-50 bg-[#242424] p-4">
                 <Image
                   src={QRCODE}
                   alt="Carlos Castro Whastapp QR Code"
