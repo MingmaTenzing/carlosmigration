@@ -1,6 +1,6 @@
 import Image from "next/image";
 import map1 from "../../assests/map1.png";
-
+import Link from "next/link";
 type Props = {};
 function BookAppointment({}: Props) {
   return (
@@ -9,9 +9,9 @@ function BookAppointment({}: Props) {
         <h2 className=" md:w-[400px]  text-2xl md:text-4xl lg:text-4xl font-bold text-white">
           Are you Looking for Visa Consultation?
         </h2>
-        <button className=" p-4 rounded-lg font-semibold  hover:bg-gray-600 hover:text-white transition-all ease-linear duration-200 uppercase bg-white text-black">
+        <Link href="/contact" className=" p-4 rounded-lg font-semibold  hover:bg-gray-600 hover:text-white transition-all ease-linear duration-200 uppercase bg-white text-black">
           Book Appointment
-        </button>
+        </Link>
         <Image
           src={map1}
           alt="map "
