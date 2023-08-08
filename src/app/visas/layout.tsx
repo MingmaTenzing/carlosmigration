@@ -3,7 +3,7 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Visas",
-  description: "Find the Best Visa For You"
+  description: "Find the Best Australian Visa that suits your needs"
  
 }
 

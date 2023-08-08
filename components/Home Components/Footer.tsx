@@ -4,8 +4,11 @@ import logo from "../../assests/Carlos Logo.png";
 import twitter from "../../assests/twitter.png";
 import facebook from "../../assests/facebook.png";
 import instagram from "../../assests/instagram.png";
+import tikTok from "../../assests/tiktok.png"
 import operaHouse from "../../assests/opera.png";
 import Link from "next/link";
+import threads from "../../assests/threads-app-icon.png"
+import Youtube from "../../assests/icons8-youtube.svg"
 type Props = {};
 function Footer({}: Props) {
   return (
@@ -51,21 +54,46 @@ function Footer({}: Props) {
               Migration Agent Registration Number (MARN): 2318194
             </p>
             <div className=" flex space-x-3">
+             <Link href="https://twitter.com/charlieshun" target="_blank">
+            
               <Image
                 src={twitter}
                 className="   invert grayscale hover:scale-110 transition-transform ease-linear duration-200 cursor-pointer md:w-8   w-6"
                 alt="Twitter Logo"
               />
+             </Link>
+             <Link href="https://www.threads.net/@charlieshun" target="_blank">
+             
               <Image
-                src={facebook}
+                src={threads}
                 className="    invert grayscale hover:scale-110 transition-transform ease-linear duration-200 cursor-pointer md:w-8 w-6"
                 alt="Twitter Logo"
               />
+             </Link>
+            <Link href="https://www.instagram.com/charlieshun/" target="_blank">
               <Image
                 src={instagram}
                 className="    invert grayscale hover:scale-110 transition-transform ease-linear duration-200 cursor-pointer md:w-8 w-6"
                 alt="Twitter Logo"
               />
+            
+            </Link>
+            <Link href="https://www.tiktok.com/@charlieshun" target="_blank">
+              <Image
+                src={tikTok}
+                className="    invert grayscale hover:scale-110 transition-transform ease-linear duration-200 cursor-pointer md:w-8 w-6"
+                alt="Twitter Logo"
+              />
+            
+            </Link>
+            <Link href="https://www.youtube.com/charlieshun" target="_blank">
+              <Image
+                src={Youtube}
+                className="    invert grayscale hover:scale-110 transition-transform ease-linear duration-200 cursor-pointer md:w-8 w-6"
+                alt="Twitter Logo"
+              />
+            
+            </Link>
             </div>
           </div>
           {/** Links */}
