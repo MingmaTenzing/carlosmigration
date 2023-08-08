@@ -8,15 +8,18 @@ import igicon from "../../../assests/ig.png";
 import twitterIcon from "../../../assests/twitter.png";
 import tiktokIcon from "../../../assests/tiktok.png";
 import HeroBackground from "../../../utilities/HeroBackground";
-import { FormEvent, useRef } from "react";
+import { FormEvent, useRef, useState } from "react";
 
 import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 
 type Props = {};
 function Contact({}: Props) {
   const form = useRef(null);
+  
   function sendMessage(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+   
     emailjs
       .sendForm(
       process.env.NEXT_PUBLIC_SERVICE_KEY!,
@@ -26,12 +29,19 @@ function Contact({}: Props) {
       )
       .then(
         (result) => {
-          console.log(result.text);
+         if (result.text) {
+          toast.success("Your Message has been sent")
+          
+         }
         },
         (error) => {
-          console.log(error.text);
+          if (error.text) {
+            toast.error("There was an error sending your message. Please try again later.")
+      
+          }
         }
       );
+      toast.dismiss();
   }
   return (
     <div>
@@ -40,6 +50,7 @@ function Contact({}: Props) {
         subTitle="It's your turn to change your future"
         bg={bg}
       />
+      <Toaster />
 
       <div className=" p-4 mt-4">
         <div className=" md:text-center space-y-3">
