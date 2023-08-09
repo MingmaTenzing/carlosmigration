@@ -19,7 +19,7 @@ function Footer({}: Props) {
             <Image
               src={logo}
               alt="Carlos Castro Logo"
-              className=" invert w-40"
+              className="   w-40"
             />
           </div>
           <div className=" flex space-x-2 items-center">

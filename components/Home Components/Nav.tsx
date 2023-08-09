@@ -29,7 +29,7 @@ function Nav({}: Props) {
               alt="Carlos Castro Logo"
               width={200}
               height={200}
-              className="  w-[120px] lg:w-[200px] lg:mr-20"
+              className="  w-[120px] "
             />
           </Link>
         </div>
