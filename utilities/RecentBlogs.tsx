@@ -13,19 +13,23 @@ function RecentBlogs({ articleToNotInclude }: Props) {
   const [recentArticles, setRecentArticles] = useState<Blog[]>();
   const [loading, setLoading] = useState<boolean>(false);
   const router = useRouter();
-  const loadingArray: number[] = new Array(5).fill(0);
+  const loadingArray: number[] = new Array(4).fill(0);
 
   useEffect(() => {
-   
-
     async function getRecentArticles() {
       setLoading(true);
       const { data: Blogs, error } = await supabase
         .from("Blogs")
         .select("*")
-        .neq("id", articleToNotInclude)
-        .range(0, 4);
-      setRecentArticles(Blogs!);
+        .neq("id", articleToNotInclude);
+
+      setRecentArticles(
+        Blogs?.sort(
+          (a, b) =>
+            new Date(b.created_at!).getTime() -
+            new Date(a.created_at!).getTime()
+        ).slice(0, 4)
+      );
       setLoading(false);
     }
 
@@ -33,12 +37,15 @@ function RecentBlogs({ articleToNotInclude }: Props) {
   }, [articleToNotInclude]);
 
   return (
-    <div className=" bg-[#f1f0f7] p-8 border rounded-lg space-y-6 lg:w-[300px]">
+    <div className=" h-[430px] bg-[#f1f0f7] p-8 border rounded-lg space-y-6 lg:w-[300px]">
       <h2 className=" font-bold text-lg">Recent Blogs</h2>
       {loading ? (
         loadingArray.map((_, index) => (
-          <div key={index} className="  animate-pulse flex space-x-3 items-center">
-            <div className=" w-24 h-20 bg-gray-600 rounded-lg" />
+          <div
+            key={index}
+            className="  animate-pulse flex space-x-3 items-center"
+          >
+            <div className=" w-20  h-16 bg-gray-600 rounded-lg" />
             <div className=" w-1/2 space-y-2">
               <div className=" w-[full] h-2 bg-gray-400"></div>
               <div className=" w-full h-4 bg-gray-300"></div>
@@ -61,7 +68,7 @@ function RecentBlogs({ articleToNotInclude }: Props) {
                   alt={article.title!}
                   width={100}
                   height={100}
-                  className=" rounded-lg min-w-24 max-h-20 object-cover"
+                  className=" rounded-lg w-24 max-h-20 object-cover"
                 />
                 <div className=" ">
                   <p className=" text-[12px] text-[#73727c]">
