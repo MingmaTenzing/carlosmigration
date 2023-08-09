@@ -3,45 +3,42 @@
 import Image from "next/image";
 import bg from "../../../assests/Contact Background.jpg";
 import { PhoneIcon } from "@heroicons/react/24/outline";
-import fbicon from "../../../assests/facebook.png";
+import threads from "../../../assests/threads-app-icon.png";
 import igicon from "../../../assests/ig.png";
 import twitterIcon from "../../../assests/twitter.png";
 import tiktokIcon from "../../../assests/tiktok.png";
 import HeroBackground from "../../../utilities/HeroBackground";
-import { FormEvent, useRef, useState } from "react";
-
+import { FormEvent, useEffect, useRef, useState } from "react";
+import youtube from "../../../assests/icons8-youtube.svg";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
+import Link from "next/link";
 
 type Props = {};
 function Contact({}: Props) {
   const form = useRef(null);
-  
+
   function sendMessage(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-   
+
     emailjs
       .sendForm(
-      process.env.NEXT_PUBLIC_SERVICE_KEY!,
-       process.env.NEXT_PUBLIC_TEMPLATE_KEY! ,
+        process.env.NEXT_PUBLIC_SERVICE_KEY!,
+        process.env.NEXT_PUBLIC_TEMPLATE_KEY!,
         form.current!,
         "5lDQ2fsinXAaz-OgN"
       )
       .then(
         (result) => {
-         if (result.text) {
-          toast.success("Your Message has been sent")
-          
-         }
+          toast.success("Your Message has been sent");
         },
         (error) => {
-          if (error.text) {
-            toast.error("There was an error sending your message. Please try again later.")
-      
-          }
+          toast.error(
+            "There was an error sending your message. Please try again later."
+          );
         }
       );
-      toast.dismiss();
+    toast.dismiss();
   }
   return (
     <div>
@@ -108,49 +105,83 @@ function Contact({}: Props) {
 
         {/** CALL NOW SECTION WITH LOCATION AND DETAILS */}
         <div className="">
-          <div className=" w-[320px] h-[340px]  rounded-lg overflow-hidden border">
-            <div className=" flex items-center space-x-4 justify-center h-[30%] bg-orange">
+          <div  className=" text-sm w-[90%] md:w-[320px] m-auto h-[400px]  rounded-lg  border">
+            <div className="  flex items-center space-x-4 justify-center h-[30%]  rounded-t-lg bg-orange">
               <PhoneIcon className=" w-8 text-white" />
-              <div className=" font-semi text-white">
+              <div className=" text-base font-semibold text-white">
                 <h2 className=" uppercase">Call Now</h2>
                 <p className=" font-semibold">+61 425 481 703</p>
               </div>
             </div>
             <div className=" space-y-8 p-4 ">
               <div className=" space-y-4 text-gray-600">
-                <p>carlos@goldenticketmigration.com </p>
-                <p>121 Hay Street, West Perth, Perth, Western Australia</p>
+                <div className= " flex space-x-2">
+                  <p>Email: </p>
+                  <p>carlos@goldenticketmigration.com </p>
+                </div>
+
+                <p>Migration Agent Registration Number (MARN): 2318194</p>
               </div>
 
               <div className=" flex space-x-3">
-                <Image
-                  src={fbicon}
-                  alt="Socials Image"
-                  width={100}
-                  height={100}
-                  className="  w-10 rounded-full p-2  hover:invert hover:scale-105 transition-all ease-linear duration-200     bg-gray-300"
-                />
-                <Image
-                  src={igicon}
-                  alt="Socials Image"
-                  width={100}
-                  height={100}
-                  className=" w-10 rounded-full p-2  hover:invert hover:scale-105 transition-all ease-linear duration-200    bg-gray-300"
-                />
-                <Image
-                  src={twitterIcon}
-                  alt="Socials Image"
-                  width={100}
-                  height={100}
-                  className=" w-10 rounded-full p-2  hover:invert hover:scale-105 transition-all ease-linear duration-200    bg-gray-300"
-                />
-                <Image
-                  src={tiktokIcon}
-                  alt="Socials Image"
-                  width={100}
-                  height={100}
-                  className=" w-10 rounded-full p-2  hover:invert hover:scale-105 transition-all ease-linear duration-200    bg-gray-300"
-                />
+                <Link href="https://twitter.com/charlieshun" target="_blank">
+                  <Image
+                    src={twitterIcon}
+                    alt="Socials Image"
+                    width={100}
+                    height={100}
+                    className="  w-10 rounded-full p-2  hover:invert hover:scale-105 transition-all ease-linear duration-200     bg-gray-300"
+                  />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/charlieshun/"
+                  target="_blank"
+                >
+                  <Image
+                    src={igicon}
+                    alt="Socials Image"
+                    width={100}
+                    height={100}
+                    className=" w-10 rounded-full p-2  hover:invert hover:scale-105 transition-all ease-linear duration-200    bg-gray-300"
+                  />
+                </Link>
+
+                <Link
+                  href="https://www.threads.net/@charlieshun"
+                  target="_blank"
+                >
+                  <Image
+                    src={threads}
+                    alt="Socials Image"
+                    width={100}
+                    height={100}
+                    className=" w-10 rounded-full p-2  hover:invert hover:scale-105 transition-all ease-linear duration-200    bg-gray-300"
+                  />
+                </Link>
+                <Link
+                  href="https://www.tiktok.com/@charlieshun"
+                  target="_blank"
+                >
+                  <Image
+                    src={tiktokIcon}
+                    alt="Socials Image"
+                    width={100}
+                    height={100}
+                    className=" w-10 rounded-full p-2  hover:invert hover:scale-105 transition-all ease-linear duration-200    bg-gray-300"
+                  />
+                </Link>
+                <Link
+                  href="https://www.youtube.com/charlieshun"
+                  target="_blank"
+                >
+                  <Image
+                    src={youtube}
+                    alt="Socials Image"
+                    width={100}
+                    height={100}
+                    className=" w-10 rounded-full p-2  hover:invert hover:scale-105 transition-all ease-linear duration-200    bg-gray-300"
+                  />
+                </Link>
               </div>
             </div>
           </div>
