@@ -3,7 +3,7 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Subclass 407",
-  description: "Find the Best Visa For You"
+  description: "Subclass 407 visa is an Australian temporary work visa designed for individuals who want to participate in occupational training, professional development, or workplace-based learning activities in Australia."
  
 }
 

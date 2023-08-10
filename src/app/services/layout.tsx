@@ -3,7 +3,7 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Services",
-  description: "Best Migration Services across Australia."
+  description: "Best Migration Services across Australia provided by Carlos Castro - HereisCarlos."
  
 }
 

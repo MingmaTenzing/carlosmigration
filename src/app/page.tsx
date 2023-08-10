@@ -11,7 +11,7 @@ import { supabase } from "../../components/supabase/supabaseclient";
 import Hero from "../../components/Home Components/Hero";
 
 export const metadata: Metadata = {
-  title: "Carlos Castro Migration",
+  title: "Here is Carlos",
   description: " Carlos Castro Migration and Education Services",
 };
 

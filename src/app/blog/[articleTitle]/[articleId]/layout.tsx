@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: Props) {
   const removeSpaces = unescape(params.articleTitle);
   return {
     title: removeSpaces,
-    description: "Carlos Castro Migration Immigration News and Information",
+    description: "Carlos Castro Australian Migration Immigration News and Information - HereisCarlos",
   };
 }
 

@@ -3,7 +3,7 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Skilled Visa",
-  description: "Find the Best Visa For You"
+  description: "A skilled visa in Australia is designed for individuals who possess specific skills, qualifications, and work experience in occupations that are in demand in the Australian job market. "
  
 }
 

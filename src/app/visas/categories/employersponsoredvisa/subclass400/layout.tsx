@@ -3,7 +3,7 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Subclass 400",
-  description: "Find the Best Visa For You"
+  description: "Find the Best Visa For You - HereisCarlos"
  
 }
 

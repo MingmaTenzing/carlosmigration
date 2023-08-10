@@ -2,8 +2,8 @@
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Family Visa",
-  description: "Find the Best Visa For You"
+  title: "Student Visa",
+  description: "A student visa in Australia allows international students to study full-time at an accredited educational institution in the country."
  
 }
 

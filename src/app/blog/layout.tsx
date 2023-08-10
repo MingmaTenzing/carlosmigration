@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'Blog',
-  description: 'Get all the latest news and information regarding Australian immigration and visa updates.'
+  description: 'Get all the latest news and information regarding Australian immigration and visa updates - HereisCarlos'
 }
 
 export default function BlogLayout({
