@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Other Visa",
   description:
-    "Full Information on Working Holiday Visa, Bridging Visa and Tourist Visa",
+    "Australia offers various working visas that allow individuals from overseas to work in the country temporarily. ",
 };
 
 function otherVisa({}) {

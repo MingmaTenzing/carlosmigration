@@ -3,7 +3,7 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Subclass 494",
-  description: "Find the Best Visa For You"
+  description: "Subclass 494 visa is an Australian skilled work visa that falls under the Regional Employer Sponsored category."
  
 }
 

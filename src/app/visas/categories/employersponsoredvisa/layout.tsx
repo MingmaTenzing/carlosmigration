@@ -3,7 +3,7 @@ import { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Employer Sponsored Visa",
-  description: "Find the Best Visa For You"
+  description: "These visas are designed to address specific labor shortages and allow employers to bring in skilled workers when they cannot find suitable employees within the Australian workforce."
  
 }
 

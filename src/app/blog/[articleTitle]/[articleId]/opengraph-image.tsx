@@ -6,7 +6,7 @@ import { unescape } from "querystring";
 export const runtime = "edge";
 
 // Image metadata
-export const alt = "About Acme";
+export const alt = "Australian Immigration News and Information"
 export const size = {
   width: 1200,
   height: 630,
