@@ -58,7 +58,7 @@ function BlogPost() {
   return (
     <div className=" lg:flex lg:w-[1200px] m-auto lg:space-x-10  p-4">
       {/** ARTICLE section */}
-      <div className=" space-y-6 md:w-[80%] m-auto lg:w-[750px]   ">
+      <article className=" space-y-6 md:w-[80%] m-auto lg:w-[750px]   ">
         <Image
           src={post?.article_img || fallbackImg}
           alt={post?.title!}
@@ -104,7 +104,7 @@ function BlogPost() {
             </div>
           </div>
         )}
-      </div>
+      </article>
 
       {/*** SIDE BAR OPTIONS */}
       <div className=" mt-10 lg:mt-0 w-full lg:w-[300px] space-y-6">
