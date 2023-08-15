@@ -45,6 +45,7 @@ function Hero({}: Props) {
           <div className=" w-full relative" key={index}>
             <Image
               src={fadeImage.src}
+              loading="eager"
               alt=" Carlos Castro Services"
               width={1200}
               height={800}
