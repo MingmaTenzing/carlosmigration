@@ -5,13 +5,13 @@ import Image from "next/image";
 import { supabase } from "../../../../../components/supabase/supabaseclient";
 import { useIntersectionObserver } from "usehooks-ts";
 import { useRef } from "react";
-
+import React from "react";
 import VisaNavigation from "../../../../../utilities/VisaNavigation";
 import RecentBlogs from "../../../../../utilities/RecentBlogs";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import fallbackImg from "../../../../../assests/blogfallbackImg.png";
-import { YouTubeEmbed } from "react-social-media-embed";
-interface article {
+import Youtube from "../../../../../utilities/Youtube";
+export interface article {
   article_img: string | null;
   author: string | null;
   author_img: string | null;
@@ -41,6 +41,7 @@ function BlogPost() {
   const isVisible = !!entry?.isIntersecting;
 
   const date = new Date(post?.created_at!);
+
   const fromattedDAted = date.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
@@ -72,6 +73,7 @@ function BlogPost() {
         <Image
           src={post?.article_img || fallbackImg}
           alt={post?.title!}
+          loading="eager"
           width={800}
           height={500}
           className=" max-h-[500px] w-full  object-cover object-center rounded-lg"
@@ -109,32 +111,20 @@ function BlogPost() {
          */}
         <span ref={ref}></span>
         {/*** */}
-
-        {showYoutubeURL === true && post?.youtube_url !== undefined && (
-          <div>
-            <div className=" md:hidden">
-              <YouTubeEmbed height={300} url={post?.youtube_url!} width={320} />
-            </div>
-            <div className=" hidden md:flex">
-              <YouTubeEmbed height={450} url={post?.youtube_url!} width={650} />
-            </div>
-          </div>
-        )}
       </article>
 
       {/*** SIDE BAR OPTIONS */}
       <div className=" mt-10 lg:mt-0 w-full lg:w-[300px] space-y-6">
         <RecentBlogs articleToNotInclude={post?.id!} />
         <VisaNavigation />
-        {showYoutubeURL && (
-          <div className=" ">
-            <TwitterTimelineEmbed
-              sourceType="profile"
-              screenName="CHARLIESHUN"
-              options={{ height: 600 }}
-            />
-          </div>
-        )}
+
+        <div className=" ">
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName="CHARLIESHUN"
+            options={{ height: 600 }}
+          />
+        </div>
       </div>
     </div>
   );
