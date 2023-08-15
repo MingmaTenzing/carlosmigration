@@ -67,9 +67,7 @@ function Admin({}: Props) {
       setIsArticlePublishing(false);
       setArticlePublished(true);
     }
-    if (error) {
-      console.log(error);
-    }
+   
   }
   {
     /** ****** */

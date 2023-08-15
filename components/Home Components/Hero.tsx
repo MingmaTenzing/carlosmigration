@@ -33,7 +33,7 @@ function Hero({}: Props) {
     },
   ];
   return (
-    <div data-aos="fade-up" className=" min-w-full">
+    <div data-aos="fade-up"  data-aos-once="true" className=" min-w-full">
       <Fade
         transitionDuration={1400}
         duration={4000}

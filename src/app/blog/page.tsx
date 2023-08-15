@@ -39,14 +39,11 @@ function Blog({}: Props) {
         setLoading(false);
       }
 
-      if (error) {
-        console.log(error);
-      }
+      
     }
 
     getArticles();
   }, []);
-  console.log(sortedArticles);
   return (
     <div>
       {loading ? (
