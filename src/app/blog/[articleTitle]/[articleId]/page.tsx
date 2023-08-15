@@ -10,7 +10,6 @@ import VisaNavigation from "../../../../../utilities/VisaNavigation";
 import RecentBlogs from "../../../../../utilities/RecentBlogs";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import fallbackImg from "../../../../../assests/blogfallbackImg.png";
-import Youtube from "../../../../../utilities/Youtube";
 export interface article {
   article_img: string | null;
   author: string | null;
@@ -36,7 +35,7 @@ function BlogPost() {
   const [post, setPost] = useState<article>();
   const ref = useRef<HTMLDivElement | null>(null);
   const entry = useIntersectionObserver(ref, {});
-  const [showYoutubeURL, setshowYoutubeURL] = useState<boolean>(false);
+  const [showTwitter, setShowTwitter] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
   const isVisible = !!entry?.isIntersecting;
 
@@ -50,7 +49,7 @@ function BlogPost() {
 
   useEffect(() => {
     if (isVisible === true) {
-      setshowYoutubeURL(true);
+      setShowTwitter(true);
     }
   }, [isVisible]);
 
@@ -118,13 +117,15 @@ function BlogPost() {
         <RecentBlogs articleToNotInclude={post?.id!} />
         <VisaNavigation />
 
-        <div className=" ">
-          <TwitterTimelineEmbed
-            sourceType="profile"
-            screenName="CHARLIESHUN"
-            options={{ height: 600 }}
-          />
-        </div>
+        {showTwitter && (
+          <div className=" ">
+            <TwitterTimelineEmbed
+              sourceType="profile"
+              screenName="CHARLIESHUN"
+              options={{ height: 600 }}
+            />
+          </div>
+        )}
       </div>
     </div>
   );
