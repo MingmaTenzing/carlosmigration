@@ -10,7 +10,7 @@ import { supabase } from "../../components/supabase/supabaseclient";
 import Hero from "../../components/Home Components/Hero";
 
 export const metadata: Metadata = {
-  title: "HereIsCarlos- Your Expert Australian Migration Agent for Seamless Pathways to Australia",
+  title: "HereIsCarlos - Expert Australian Migration Agent",
   description:
     "Navigate Australian Immigration with Expert Guidance | Welcome to HereIsCarlos.com - Your Trusted Australian Migration Agent. Streamline your visa application process with personalized advice and seamless support. Discover pathways to a new life in Australia. Get started now! ",
 };
