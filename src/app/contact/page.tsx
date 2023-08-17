@@ -23,7 +23,7 @@ function Contact({}: Props) {
 
     emailjs
       .sendForm(
-        "service_fa3719s",
+        "service_fuouk29",
         process.env. NEXT_PUBLIC_EMAIL_TEMPLATE_ID!,
         form.current!,
         "d3k0Sn8LdDyA8MPmb"
