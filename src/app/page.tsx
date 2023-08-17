@@ -1,4 +1,3 @@
-
 import AboutUs from "../../components/Home Components/AboutUs";
 import Offering from "../../components/Home Components/Offering";
 import Clients from "../../components/Home Components/Clients";
@@ -11,12 +10,10 @@ import { supabase } from "../../components/supabase/supabaseclient";
 import Hero from "../../components/Home Components/Hero";
 
 export const metadata: Metadata = {
-  title: "Here is Carlos",
-  description: " Carlos Castro Migration and Education Services",
+  title: "HereIsCarlos- Your Expert Australian Migration Agent for Seamless Pathways to Australia",
+  description:
+    "Navigate Australian Immigration with Expert Guidance | Welcome to HereIsCarlos.com - Your Trusted Australian Migration Agent. Streamline your visa application process with personalized advice and seamless support. Discover pathways to a new life in Australia. Get started now! ",
 };
-
-
-
 
 export default function Home() {
   return (
