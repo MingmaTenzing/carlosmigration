@@ -23,10 +23,10 @@ function Contact({}: Props) {
 
     emailjs
       .sendForm(
-        "service_spab4la",
+        "service_fa3719s",
         process.env. NEXT_PUBLIC_EMAIL_TEMPLATE_ID!,
         form.current!,
-        "5lDQ2fsinXAaz-OgN"
+        "d3k0Sn8LdDyA8MPmb"
       )
       .then(
         (result) => {
