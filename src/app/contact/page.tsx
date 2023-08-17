@@ -23,8 +23,8 @@ function Contact({}: Props) {
 
     emailjs
       .sendForm(
-        "service_fuouk29",
-        process.env. NEXT_PUBLIC_EMAIL_TEMPLATE_ID!,
+        process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID!,
         form.current!,
         "d3k0Sn8LdDyA8MPmb"
       )
@@ -36,6 +36,7 @@ function Contact({}: Props) {
           toast.error(
             "There was an error sending your message. Please try again later."
           );
+          console.log(error.text);
         }
       );
     toast.dismiss();
