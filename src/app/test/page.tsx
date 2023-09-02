@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { getPost } from "../../../sanity/sanity.query"
 import { Post } from "../../../sanity/sanity.types"
+import post from "../../../schemas/post";
 
 type Props = {}
  function page({}: Props) {
@@ -18,7 +19,8 @@ type Props = {}
     console.log(posts)
   
   return (
-    <div>page</div>
+    <div>{
+        posts?.map((post) => <div key={post._id}> {post.title} </div>)}</div>
   )
 }
 export default page
