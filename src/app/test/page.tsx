@@ -1,16 +1,17 @@
 "use client";
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { getPosts } from "../../../sanity/sanity.query";
 import { Post } from "../../../sanity/sanity.types";
-import post from "../../../schemas/post";
-import { PortableText } from "@portabletext/react";
 import client from "../../../sanity/sanity.client";
 import imageUrlBuilder from "@sanity/image-url";
-import { Image, PortableTextBlock, Reference } from "sanity";
-import { SanityAsset } from "@sanity/image-url/lib/types/types";
+
+import { PortableText, PortableTextComponents } from "@portabletext/react";
+import Image from "next/image";
+import { urlFor } from "../../../sanity/urlbuilder";
 
 type Props = {};
-function page({}: Props) {
+
+function Test({}: Props) {
   const [posts, setPosts] = useState<Post>();
   useEffect(() => {
     async function getData() {
@@ -19,26 +20,44 @@ function page({}: Props) {
     }
     getData();
   }, []);
-  console.log(posts?.body);
-  function urlFor(source: any) {
-    return imageUrlBuilder(client).image(source);
-  }
 
-  const ptComponents = {
+  const components: PortableTextComponents = {
+    block: {
+      // Ex. 1: customizing common block types
+      h1: ({ children }) => <h1 className="text-2xl font-bold">{children}</h1>,
+      blockquote: ({ children }) => (
+        <blockquote className="border-l-purple-500">{children}</blockquote>
+      ),
+
+      // Ex. 2: rendering custom styles
+      customHeading: ({ children }) => (
+        <h2 className="text-lg text-primary text-purple-700">{children}</h2>
+      ),
+    },
     types: {
-      image: ({ value }:SanityAsset) => {
+      image: ({ value }) => {
         if (!value?.asset?._ref) {
           return null;
         }
         return (
-          <img className=""
-            alt={value.alt || " "}
-            loading="lazy"
-            src={urlFor(value)
-              
-             
-              .url()}
+          <Image
+            src={urlFor(value).url()}
+            alt="image"
+            width={400}
+            height={300}
           />
+        );
+      },
+    },
+    marks: {
+      link: ({ value, children }) => {
+        const target = (value?.href || "").startsWith("http")
+          ? "_blank"
+          : undefined;
+        return (
+          <a className=" underline" href={value?.href} target={target}>
+            {children}
+          </a>
         );
       },
     },
@@ -46,8 +65,8 @@ function page({}: Props) {
 
   return (
     <div>
-      {posts && <PortableText value={posts.body} components={ptComponents} />}
+      {posts && <PortableText value={posts.body} components={components} />}
     </div>
   );
 }
-export default page;
+export default Test;
