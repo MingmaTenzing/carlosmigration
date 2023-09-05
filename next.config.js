@@ -9,6 +9,7 @@ const nextConfig = {
          
           },
         ],
+        domains: ['cdn.sanity.io']
       },
    
    
