@@ -6,6 +6,7 @@ export type Post = {
     publishedAt: Date; 
     _id:string;
     body: PortableTextBlock[];
+    subtitle: string;
 
 
 }

@@ -24,7 +24,7 @@ function Test({}: Props) {
   const components: PortableTextComponents = {
     block: {
       // Ex. 1: customizing common block types
-      h1: ({ children }) => <h1 className="text-2xl font-bold">{children}</h1>,
+      h2: ({ children }) => <h1 className="text-2xl font-bold">{children}</h1>,
       blockquote: ({ children }) => (
         <blockquote className="border-l-purple-500">{children}</blockquote>
       ),
